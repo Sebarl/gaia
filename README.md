@@ -4,6 +4,7 @@ Dependencias:
 Para poder compilar exitosamente se requieren los siguientes paquetes:
 
 *Las dependencias de Fceux (segun el manual de instalacion):
+	
 	-libsdl1.2 - It is strongly recommended that you upgrade to the latest
 		version of sdl (1.2.15 at the time of writing).
 	-scons - Required to build fceux.
