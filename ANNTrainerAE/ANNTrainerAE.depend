@@ -1,0 +1,1361 @@
+# depslib dependency file v1.0
+1471323323 source:/home/sebastian/Documentos/ANNTrainerAE/src/GenericException.cpp
+	"GenericException.h"
+
+1471323323 /home/sebastian/Documentos/ANNTrainerAE/include/GenericException.h
+	<exception>
+
+1471323323 source:/home/sebastian/Documentos/ANNTrainerAE/src/OwnAEUtils.cpp
+	"OwnAEUtils.h"
+	<math.h>
+
+1471323322 /home/sebastian/Documentos/ANNTrainerAE/include/OwnAEUtils.h
+
+1471323323 source:/home/sebastian/Documentos/ANNTrainerAE/src/PlatformSpecific.cpp
+	"PlatformSpecific.h"
+	<windows.h>
+	<unistd.h>
+	<time.h>
+
+1471323322 /home/sebastian/Documentos/ANNTrainerAE/include/PlatformSpecific.h
+
+1471323527 source:/home/sebastian/Documentos/ANNTrainerAE/src/XorShift128.cpp
+	"XorShift128.h"
+	"PlatformSpecific.h"
+	<stdio.h>
+	<cmath>
+
+1471323322 /home/sebastian/Documentos/ANNTrainerAE/include/XorShift128.h
+	<stdint.h>
+	<Random.h>
+
+1471323322 /home/sebastian/Documentos/ANNTrainerAE/include/Random.h
+
+1477646459 source:/home/sebastian/Documentos/ANNTrainerAE/main.cpp
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<vector>
+	<fstream>
+	<iostream>
+	<exception>
+	"Parameters.h"
+	"FinalStatistics.h"
+	"EvolutionaryOperator.h"
+	"Constants.h"
+	"XorShift128.h"
+	"GenerationCount.h"
+	"GenerationObserver.h"
+	"NEATCandidateFactory.h"
+	"NEATSelectionStrategy.h"
+	"NEATEvolutionEngine.h"
+	"NEATParams.h"
+	"NEATStochasticUniversalSampling.h"
+	"FCEUXEvaluator.h"
+	"NEATObserver.h"
+
+1475372940 /home/sebastian/Documentos/ANNTrainerAE/include/Parameters.h
+	"NEATParams.h"
+	"ActivationFunction.h"
+
+1471323323 /home/sebastian/Documentos/ANNTrainerAE/include/FinalStatistics.h
+	"PopulationData.h"
+	<vector>
+	"EvaluatedCandidate.h"
+
+1471323322 /home/sebastian/Documentos/ANNTrainerAE/include/PopulationData.h
+
+1471323323 /home/sebastian/Documentos/ANNTrainerAE/include/EvaluatedCandidate.h
+
+1468906728 /home/sebastian/Documentos/ANNTrainerAE/include/Solution.h
+	<vector>
+	"MatrixMxN.h"
+
+1468908707 /home/sebastian/Documentos/ANNTrainerAE/include/MatrixMxN.h
+	<iostream>
+	<fstream>
+	"Random.h"
+
+1468907427 /home/sebastian/Documentos/ANNTrainerAE/include/PinballFactory.h
+	<CandidateFactory.h>
+	"Solution.h"
+	"Random.h"
+	"Parameters.h"
+
+1471323323 /home/sebastian/Documentos/ANNTrainerAE/include/CandidateFactory.h
+	<vector>
+	"Random.h"
+	"GenericException.h"
+
+1471323323 /home/sebastian/Documentos/ANNTrainerAE/include/EvolutionaryOperator.h
+	<vector>
+	"Random.h"
+
+1451278850 /home/sebastian/Documentos/ANNTrainerAE/include/PinballCrossoverOperator.h
+	"Solution.h"
+	"AbstractCrossover.h"
+
+1452492483 /home/sebastian/Documentos/ANNTrainerAE/include/AbstractCrossover.h
+	<vector>
+	<Random.h>
+	"EvolutionUtils.h"
+	"EvolutionaryOperator.h"
+	"GenericException.h"
+
+1471323323 /home/sebastian/Documentos/ANNTrainerAE/include/EvolutionUtils.h
+	<vector>
+	"PopulationData.h"
+	"Random.h"
+	"EvaluatedCandidate.h"
+	"TerminationCondition.h"
+	<algorithm>
+	<math.h>
+
+1471323322 /home/sebastian/Documentos/ANNTrainerAE/include/TerminationCondition.h
+	"PopulationData.h"
+
+1451279083 /home/sebastian/Documentos/ANNTrainerAE/include/PinballMutationOperator.h
+	"Solution.h"
+	"EvolutionaryOperator.h"
+
+1468906737 /home/sebastian/Documentos/ANNTrainerAE/include/EvolutionPipeline.h
+	<EvolutionaryOperator.h>
+
+1471323323 /home/sebastian/Documentos/ANNTrainerAE/include/Constants.h
+
+1468906746 /home/sebastian/Documentos/ANNTrainerAE/include/PinballEvaluator.h
+	"Parameters.h"
+	"FitnessEvaluator.h"
+	"Solution.h"
+
+1471323323 /home/sebastian/Documentos/ANNTrainerAE/include/FitnessEvaluator.h
+	<vector>
+
+1471654461 /home/sebastian/Documentos/ANNTrainerAE/include/SimpleEvolutionEngine.h
+	<vector>
+	"EvolutionEngine.h"
+	"EvolutionObserver.h"
+	"Random.h"
+	"CandidateFactory.h"
+	"FitnessEvaluator.h"
+	"TerminationCondition.h"
+	<exception>
+	"GenericException.h"
+	<cmath>
+	"PopulationData.h"
+	"EvolutionUtils.h"
+	"EvolutionaryOperator.h"
+	"SelectionStrategy.h"
+
+1471640064 /home/sebastian/Documentos/ANNTrainerAE/include/EvolutionEngine.h
+	<vector>
+	<math.h>
+	<stdlib.h>
+	<time.h>
+	"TerminationCondition.h"
+	"EvaluatedCandidate.h"
+	"EvolutionObserver.h"
+	"FinalStatistics.h"
+	"GenericException.h"
+
+1471323323 /home/sebastian/Documentos/ANNTrainerAE/include/EvolutionObserver.h
+	"PopulationData.h"
+
+1471323322 /home/sebastian/Documentos/ANNTrainerAE/include/SelectionStrategy.h
+	<vector>
+	"Random.h"
+
+1452482145 /home/sebastian/Documentos/ANNTrainerAE/include/StochasticUniversalSampling.h
+	<SelectionStrategy.h>
+	<vector>
+	"EvaluatedCandidate.h"
+	<math.h>
+
+1471323323 /home/sebastian/Documentos/ANNTrainerAE/include/GenerationCount.h
+	<TerminationCondition.h>
+	"GenericException.h"
+	"PopulationData.h"
+
+1472012659 /home/sebastian/Documentos/ANNTrainerAE/include/GenerationObserver.h
+	<EvolutionObserver.h>
+
+1472000581 /home/sebastian/Documentos/ANNTrainerAE/include/ParallelEvolutionEngine.h
+	<SimpleEvolutionEngine.h>
+	"PlatformSpecific.h"
+	<omp.h>
+
+1460697526 /home/sebastian/Documentos/ANNTrainerAE/include/IslandsEvolutionEngine.h
+	<EvolutionEngine.h>
+	"GenerationCount.h"
+	"MigrationOperator.h"
+	"GenericException.h"
+	"EvolutionUtils.h"
+	"PlatformSpecific.h"
+	<omp.h>
+	<time.h>
+
+1451376872 /home/sebastian/Documentos/ANNTrainerAE/include/MigrationOperator.h
+	"EvaluatedCandidate.h"
+	<vector>
+	"Random.h"
+
+1452744187 /home/sebastian/Documentos/ANNTrainerAE/include/RingMigration.h
+	"MigrationOperator.h"
+	"EvolutionUtils.h"
+
+1468981732 /home/sebastian/Documentos/ANNTrainerAE/include/MicParallelEvolutionEngine.h
+	<SimpleEvolutionEngine.h>
+	"PlatformSpecific.h"
+	<omp.h>
+	"PinballEvaluator.h"
+	<sstream>
+	"GenericException.h"
+
+1468908362 source:/home/sebastian/Documentos/ANNTrainerAE/src/MatrixMxN.cpp
+	<stdlib.h>
+	<string.h>
+	"MatrixMxN.h"
+
+1469509172 source:/home/sebastian/Documentos/ANNTrainerAE/src/PinballCrossoverOperator.cpp
+	"PinballCrossoverOperator.h"
+	<stdlib.h>
+	<string.h>
+
+1469524221 source:/home/sebastian/Documentos/ANNTrainerAE/src/PinballEvaluator.cpp
+	<stdlib.h>
+	<cstring>
+	"PinballEvaluator.h"
+	"Constants.h"
+	<stdio.h>
+
+1468908738 source:/home/sebastian/Documentos/ANNTrainerAE/src/PinballFactory.cpp
+	"PinballFactory.h"
+	<math.h>
+
+1468907975 source:/home/sebastian/Documentos/ANNTrainerAE/src/PinballMutationOperator.cpp
+	"PinballMutationOperator.h"
+	"MatrixMxN.h"
+
+1468920697 source:/home/sebastian/Documentos/ANNTrainerAE/src/Solution.cpp
+	"Solution.h"
+	<iostream>
+	"Constants.h"
+
+1473400498 source:/home/tecno_1994/Tesis/ANNTrainerAE/main.cpp
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<vector>
+	<fstream>
+	<iostream>
+	<exception>
+	"Parameters.h"
+	"FinalStatistics.h"
+	"EvolutionaryOperator.h"
+	"Constants.h"
+	"XorShift128.h"
+	"GenerationCount.h"
+	"GenerationObserver.h"
+	"NEATCandidateFactory.h"
+	"NEATSelectionStrategy.h"
+	"NEATEvolutionEngine.h"
+	"NEATParams.h"
+	"NEATStochasticUniversalSampling.h"
+	"FCEUXEvaluator.h"
+	"NEATObserver.h"
+
+1473399825 /home/tecno_1994/Tesis/ANNTrainerAE/include/Parameters.h
+	"NEATParams.h"
+	"ActivationFunction.h"
+
+1471488196 /home/tecno_1994/Tesis/ANNTrainerAE/include/FinalStatistics.h
+	"PopulationData.h"
+	<vector>
+	"EvaluatedCandidate.h"
+
+1471488196 /home/tecno_1994/Tesis/ANNTrainerAE/include/PopulationData.h
+
+1471488196 /home/tecno_1994/Tesis/ANNTrainerAE/include/EvaluatedCandidate.h
+
+1468986208 /home/tecno_1994/Tesis/ANNTrainerAE/include/Solution.h
+	<vector>
+	"MatrixMxN.h"
+
+1468986208 /home/tecno_1994/Tesis/ANNTrainerAE/include/MatrixMxN.h
+	<iostream>
+	<fstream>
+	"Random.h"
+
+1471488196 /home/tecno_1994/Tesis/ANNTrainerAE/include/Random.h
+
+1468986208 /home/tecno_1994/Tesis/ANNTrainerAE/include/PinballFactory.h
+	<CandidateFactory.h>
+	"Solution.h"
+	"Random.h"
+	"Parameters.h"
+
+1471488196 /home/tecno_1994/Tesis/ANNTrainerAE/include/CandidateFactory.h
+	<vector>
+	"Random.h"
+	"GenericException.h"
+
+1471488196 /home/tecno_1994/Tesis/ANNTrainerAE/include/GenericException.h
+	<exception>
+
+1471488196 /home/tecno_1994/Tesis/ANNTrainerAE/include/EvolutionaryOperator.h
+	<vector>
+	"Random.h"
+
+1468986208 /home/tecno_1994/Tesis/ANNTrainerAE/include/PinballCrossoverOperator.h
+	"Solution.h"
+	"AbstractCrossover.h"
+
+1468986208 /home/tecno_1994/Tesis/ANNTrainerAE/include/AbstractCrossover.h
+	<vector>
+	<Random.h>
+	"EvolutionUtils.h"
+	"EvolutionaryOperator.h"
+	"GenericException.h"
+
+1471488196 /home/tecno_1994/Tesis/ANNTrainerAE/include/EvolutionUtils.h
+	<vector>
+	"PopulationData.h"
+	"Random.h"
+	"EvaluatedCandidate.h"
+	"TerminationCondition.h"
+	<algorithm>
+	<math.h>
+
+1471488196 /home/tecno_1994/Tesis/ANNTrainerAE/include/TerminationCondition.h
+	"PopulationData.h"
+
+1468986208 /home/tecno_1994/Tesis/ANNTrainerAE/include/PinballMutationOperator.h
+	"Solution.h"
+	"EvolutionaryOperator.h"
+
+1468986208 /home/tecno_1994/Tesis/ANNTrainerAE/include/EvolutionPipeline.h
+	<EvolutionaryOperator.h>
+
+1471488196 /home/tecno_1994/Tesis/ANNTrainerAE/include/Constants.h
+
+1468986208 /home/tecno_1994/Tesis/ANNTrainerAE/include/PinballEvaluator.h
+	"Parameters.h"
+	"FitnessEvaluator.h"
+	"Solution.h"
+
+1471488196 /home/tecno_1994/Tesis/ANNTrainerAE/include/FitnessEvaluator.h
+	<vector>
+
+1471662832 /home/tecno_1994/Tesis/ANNTrainerAE/include/SimpleEvolutionEngine.h
+	<vector>
+	"EvolutionEngine.h"
+	"EvolutionObserver.h"
+	"Random.h"
+	"CandidateFactory.h"
+	"FitnessEvaluator.h"
+	"TerminationCondition.h"
+	<exception>
+	"GenericException.h"
+	<cmath>
+	"PopulationData.h"
+	"EvolutionUtils.h"
+	"EvolutionaryOperator.h"
+	"SelectionStrategy.h"
+
+1471662832 /home/tecno_1994/Tesis/ANNTrainerAE/include/EvolutionEngine.h
+	<vector>
+	<math.h>
+	<stdlib.h>
+	<time.h>
+	"TerminationCondition.h"
+	"EvaluatedCandidate.h"
+	"EvolutionObserver.h"
+	"FinalStatistics.h"
+	"GenericException.h"
+
+1471488196 /home/tecno_1994/Tesis/ANNTrainerAE/include/EvolutionObserver.h
+	"PopulationData.h"
+
+1471488196 /home/tecno_1994/Tesis/ANNTrainerAE/include/SelectionStrategy.h
+	<vector>
+	"Random.h"
+
+1471488196 /home/tecno_1994/Tesis/ANNTrainerAE/include/XorShift128.h
+	<stdint.h>
+	<Random.h>
+
+1470562682 /home/tecno_1994/Tesis/ANNTrainerAE/include/StochasticUniversalSampling.h
+	<SelectionStrategy.h>
+	<vector>
+	"EvaluatedCandidate.h"
+	<math.h>
+
+1468986208 /home/tecno_1994/Tesis/ANNTrainerAE/include/GenerationCount.h
+	<TerminationCondition.h>
+	"GenericException.h"
+	"PopulationData.h"
+
+1473394766 /home/tecno_1994/Tesis/ANNTrainerAE/include/GenerationObserver.h
+	<EvolutionObserver.h>
+
+1473396024 /home/tecno_1994/Tesis/ANNTrainerAE/include/ParallelEvolutionEngine.h
+	<SimpleEvolutionEngine.h>
+	"PlatformSpecific.h"
+	<omp.h>
+
+1468986208 /home/tecno_1994/Tesis/ANNTrainerAE/include/PlatformSpecific.h
+
+1468986208 /home/tecno_1994/Tesis/ANNTrainerAE/include/IslandsEvolutionEngine.h
+	<EvolutionEngine.h>
+	"GenerationCount.h"
+	"MigrationOperator.h"
+	"GenericException.h"
+	"EvolutionUtils.h"
+	"PlatformSpecific.h"
+	<omp.h>
+	<time.h>
+
+1468986208 /home/tecno_1994/Tesis/ANNTrainerAE/include/MigrationOperator.h
+	"EvaluatedCandidate.h"
+	<vector>
+	"Random.h"
+
+1468986208 /home/tecno_1994/Tesis/ANNTrainerAE/include/RingMigration.h
+	"MigrationOperator.h"
+	"EvolutionUtils.h"
+
+1468986208 /home/tecno_1994/Tesis/ANNTrainerAE/include/MicParallelEvolutionEngine.h
+	<SimpleEvolutionEngine.h>
+	"PlatformSpecific.h"
+	<omp.h>
+	"PinballEvaluator.h"
+	<sstream>
+	"GenericException.h"
+
+1468986208 source:/home/tecno_1994/Tesis/ANNTrainerAE/src/GenericException.cpp
+	"GenericException.h"
+
+1470077104 source:/home/tecno_1994/Tesis/ANNTrainerAE/src/LinkGene.cpp
+	"LinkGene.h"
+
+1470077072 /home/tecno_1994/Tesis/ANNTrainerAE/include/LinkGene.h
+	<iostream>
+
+1468986208 source:/home/tecno_1994/Tesis/ANNTrainerAE/src/MatrixMxN.cpp
+	<stdlib.h>
+	<string.h>
+	"MatrixMxN.h"
+
+1473394766 source:/home/tecno_1994/Tesis/ANNTrainerAE/src/CheapSigmoid.cpp
+	"CheapSigmoid.h"
+	<math.h>
+	<stdio.h>
+
+1473394766 /home/tecno_1994/Tesis/ANNTrainerAE/include/CheapSigmoid.h
+	"Sigmoid.h"
+
+1473394766 /home/tecno_1994/Tesis/ANNTrainerAE/include/Sigmoid.h
+	"ActivationFunction.h"
+
+1473394766 /home/tecno_1994/Tesis/ANNTrainerAE/include/ActivationFunction.h
+	"Random.h"
+
+1473394766 source:/home/tecno_1994/Tesis/ANNTrainerAE/src/Identity.cpp
+	"Identity.h"
+	<stdio.h>
+
+1473394766 /home/tecno_1994/Tesis/ANNTrainerAE/include/Identity.h
+	"ActivationFunction.h"
+
+1473394766 source:/home/tecno_1994/Tesis/ANNTrainerAE/src/InnovationDB.cpp
+	"InnovationDB.h"
+	"Sigmoid.h"
+
+1471488196 /home/tecno_1994/Tesis/ANNTrainerAE/include/InnovationDB.h
+	<vector>
+	"Innovations.h"
+	"NeuronType.h"
+	"NEATNeuron.h"
+
+1471488196 /home/tecno_1994/Tesis/ANNTrainerAE/include/Innovations.h
+	"NeuronType.h"
+
+1470755711 /home/tecno_1994/Tesis/ANNTrainerAE/include/NeuronType.h
+
+1473394766 /home/tecno_1994/Tesis/ANNTrainerAE/include/NEATNeuron.h
+	<iostream>
+	"NeuronType.h"
+	"ActivationFunction.h"
+	"Random.h"
+
+1473394766 source:/home/tecno_1994/Tesis/ANNTrainerAE/src/NEATLink.cpp
+	"NEATLink.h"
+
+1473394766 /home/tecno_1994/Tesis/ANNTrainerAE/include/NEATLink.h
+	<iostream>
+	"Random.h"
+
+1473394766 source:/home/tecno_1994/Tesis/ANNTrainerAE/src/NEATGenome.cpp
+	"NEATGenome.h"
+	<cmath>
+	<stdio.h>
+
+1473394766 /home/tecno_1994/Tesis/ANNTrainerAE/include/NEATGenome.h
+	<vector>
+	<iostream>
+	"NEATNeuron.h"
+	"NEATLink.h"
+	"InnovationDB.h"
+
+1473394766 source:/home/tecno_1994/Tesis/ANNTrainerAE/src/NEATNeuron.cpp
+	"NEATNeuron.h"
+	"Sigmoid.h"
+	"Identity.h"
+
+1468986208 source:/home/tecno_1994/Tesis/ANNTrainerAE/src/PlatformSpecific.cpp
+	"PlatformSpecific.h"
+	<windows.h>
+	<unistd.h>
+	<time.h>
+
+1473394766 source:/home/tecno_1994/Tesis/ANNTrainerAE/src/Sigmoid.cpp
+	"Sigmoid.h"
+	<math.h>
+	<stdio.h>
+
+1468986208 source:/home/tecno_1994/Tesis/ANNTrainerAE/src/Solution.cpp
+	"Solution.h"
+	<iostream>
+	"Constants.h"
+
+1471488196 source:/home/tecno_1994/Tesis/ANNTrainerAE/src/XorShift128.cpp
+	"XorShift128.h"
+	"PlatformSpecific.h"
+	<stdio.h>
+	<cmath>
+
+1473394766 source:/home/tecno_1994/Tesis/ANNTrainerAE/src/NEATCandidateFactory.cpp
+	"NEATCandidateFactory.h"
+	"Identity.h"
+	"Sigmoid.h"
+
+1473394766 /home/tecno_1994/Tesis/ANNTrainerAE/include/NEATCandidateFactory.h
+	"NEATGenome.h"
+	"Random.h"
+	"InnovationDB.h"
+	"CandidateFactory.h"
+
+1471488196 /home/tecno_1994/Tesis/ANNTrainerAE/include/NEATSelectionStrategy.h
+	<vector>
+	"Random.h"
+	"NEATGenome.h"
+	"EvaluatedCandidate.h"
+
+1473394766 /home/tecno_1994/Tesis/ANNTrainerAE/include/NEATEvolutionEngine.h
+	<vector>
+	"ParallelEvolutionEngine.h"
+	"NEATSelectionStrategy.h"
+	"NEATGenome.h"
+	"NEATSpecies.h"
+	"NEATParams.h"
+	"InnovationDB.h"
+	"NEATCandidateFactory.h"
+	<list>
+
+1471901358 /home/tecno_1994/Tesis/ANNTrainerAE/include/NEATSpecies.h
+	<vector>
+	"NEATGenome.h"
+	"EvaluatedCandidate.h"
+
+1471721208 /home/tecno_1994/Tesis/ANNTrainerAE/include/NEATParams.h
+
+1473397035 source:/home/tecno_1994/Tesis/ANNTrainerAE/src/NEATEvolutionEngine.cpp
+	<math.h>
+	"NEATEvolutionEngine.h"
+	"PlatformSpecific.h"
+	<stdio.h>
+
+1471901358 source:/home/tecno_1994/Tesis/ANNTrainerAE/src/NEATSpecies.cpp
+	"NEATSpecies.h"
+
+1471488196 source:/home/tecno_1994/Tesis/ANNTrainerAE/src/OwnAEUtils.cpp
+	"OwnAEUtils.h"
+	<math.h>
+
+1471488196 /home/tecno_1994/Tesis/ANNTrainerAE/include/OwnAEUtils.h
+
+1471488196 /home/tecno_1994/Tesis/ANNTrainerAE/include/FCEUXEvaluator.h
+	"Parameters.h"
+	"FitnessEvaluator.h"
+	"NEATGenome.h"
+
+1471915095 /home/sebastian/Documentos/ANNTrainerAE/include/NEATParams.h
+
+1471934497 /home/sebastian/Documentos/ANNTrainerAE/include/ActivationFunction.h
+	"Random.h"
+
+1471916471 /home/sebastian/Documentos/ANNTrainerAE/include/NEATCandidateFactory.h
+	"NEATGenome.h"
+	"Random.h"
+	"InnovationDB.h"
+	"CandidateFactory.h"
+
+1472015720 /home/sebastian/Documentos/ANNTrainerAE/include/NEATGenome.h
+	<vector>
+	<iostream>
+	"NEATNeuron.h"
+	"NEATLink.h"
+	"InnovationDB.h"
+
+1471934796 /home/sebastian/Documentos/ANNTrainerAE/include/NEATNeuron.h
+	<iostream>
+	"NeuronType.h"
+	"ActivationFunction.h"
+	"Random.h"
+
+1471323322 /home/sebastian/Documentos/ANNTrainerAE/include/NeuronType.h
+
+1471926328 /home/sebastian/Documentos/ANNTrainerAE/include/NEATLink.h
+	<iostream>
+	"Random.h"
+
+1471323323 /home/sebastian/Documentos/ANNTrainerAE/include/InnovationDB.h
+	<vector>
+	"Innovations.h"
+	"NeuronType.h"
+	"NEATNeuron.h"
+
+1471323323 /home/sebastian/Documentos/ANNTrainerAE/include/Innovations.h
+	"NeuronType.h"
+
+1471323322 /home/sebastian/Documentos/ANNTrainerAE/include/NEATSelectionStrategy.h
+	<vector>
+	"Random.h"
+	"NEATGenome.h"
+	"EvaluatedCandidate.h"
+
+1471928899 /home/sebastian/Documentos/ANNTrainerAE/include/NEATEvolutionEngine.h
+	<vector>
+	"ParallelEvolutionEngine.h"
+	"NEATSelectionStrategy.h"
+	"NEATGenome.h"
+	"NEATSpecies.h"
+	"NEATParams.h"
+	"InnovationDB.h"
+	"NEATCandidateFactory.h"
+	<list>
+
+1471915095 /home/sebastian/Documentos/ANNTrainerAE/include/NEATSpecies.h
+	<vector>
+	"NEATGenome.h"
+	"EvaluatedCandidate.h"
+
+1477717340 /home/sebastian/Documentos/ANNTrainerAE/include/FCEUXEvaluator.h
+	"Parameters.h"
+	"FitnessEvaluator.h"
+	"NEATGenome.h"
+
+1472002400 source:/home/sebastian/Documentos/ANNTrainerAE/src/CheapSigmoid.cpp
+	"CheapSigmoid.h"
+	<math.h>
+	<stdio.h>
+
+1471934580 /home/sebastian/Documentos/ANNTrainerAE/include/CheapSigmoid.h
+	"Sigmoid.h"
+
+1471934580 /home/sebastian/Documentos/ANNTrainerAE/include/Sigmoid.h
+	"ActivationFunction.h"
+
+1475453627 source:/home/sebastian/Documentos/ANNTrainerAE/src/FCEUXEvaluator.cpp
+	<stdlib.h>
+	<cstring>
+	"FCEUXEvaluator.h"
+	"Constants.h"
+	<stdio.h>
+	"NeuronType.h"
+	"XorShift128.h"
+	"GenericException.h"
+
+1471934580 source:/home/sebastian/Documentos/ANNTrainerAE/src/Identity.cpp
+	"Identity.h"
+	<stdio.h>
+
+1471934580 /home/sebastian/Documentos/ANNTrainerAE/include/Identity.h
+	"ActivationFunction.h"
+
+1472017562 source:/home/sebastian/Documentos/ANNTrainerAE/src/InnovationDB.cpp
+	"InnovationDB.h"
+	"Sigmoid.h"
+
+1472017824 source:/home/sebastian/Documentos/ANNTrainerAE/src/NEATCandidateFactory.cpp
+	"NEATCandidateFactory.h"
+	"Identity.h"
+	"Sigmoid.h"
+
+1473402068 source:/home/sebastian/Documentos/ANNTrainerAE/src/NEATEvolutionEngine.cpp
+	<math.h>
+	"NEATEvolutionEngine.h"
+	"PlatformSpecific.h"
+	<stdio.h>
+
+1472020751 source:/home/sebastian/Documentos/ANNTrainerAE/src/NEATGenome.cpp
+	"NEATGenome.h"
+	<cmath>
+	<stdio.h>
+
+1471926758 source:/home/sebastian/Documentos/ANNTrainerAE/src/NEATLink.cpp
+	"NEATLink.h"
+
+1472009540 source:/home/sebastian/Documentos/ANNTrainerAE/src/NEATNeuron.cpp
+	"NEATNeuron.h"
+	"Sigmoid.h"
+	"Identity.h"
+
+1471915095 source:/home/sebastian/Documentos/ANNTrainerAE/src/NEATSpecies.cpp
+	"NEATSpecies.h"
+
+1473400573 source:/home/tecno_1994/Tesis/ANNTrainerAE/src/FCEUXEvaluator.cpp
+	<stdlib.h>
+	<cstring>
+	"FCEUXEvaluator.h"
+	"Constants.h"
+	<stdio.h>
+	"NeuronType.h"
+	"XorShift128.h"
+	"GenericException.h"
+
+1470768767 source:/home/tecno_1994/Tesis/ANNTrainerAE/src/NEATStochasticUniversalSampling.cpp
+	"NEATStochasticUniversalSampling.h"
+	<math.h>
+
+1470768812 /home/tecno_1994/Tesis/ANNTrainerAE/include/NEATStochasticUniversalSampling.h
+	<vector>
+	"NEATSelectionStrategy.h"
+
+1471323322 /home/sebastian/Documentos/ANNTrainerAE/include/NEATStochasticUniversalSampling.h
+	<vector>
+	"NEATSelectionStrategy.h"
+
+1471997857 source:/home/sebastian/Documentos/ANNTrainerAE/src/NEATStochasticUniversalSampling.cpp
+	"NEATStochasticUniversalSampling.h"
+	<math.h>
+
+1471934580 source:/home/sebastian/Documentos/ANNTrainerAE/src/Sigmoid.cpp
+	"Sigmoid.h"
+	<math.h>
+	<stdio.h>
+
+1472013291 /home/sebastian/Documentos/ANNTrainerAE/include/NEATObserver.h
+	<EvolutionObserver.h>
+	<NEATGenome.h>
+
+1473394766 /home/tecno_1994/Tesis/ANNTrainerAE/include/NEATObserver.h
+	<EvolutionObserver.h>
+	<NEATGenome.h>
+
+1476682989 source:/home/sebastian/Documentos/AEFramework/src/CheapSigmoid.cpp
+	"CheapSigmoid.h"
+	<math.h>
+	<stdio.h>
+
+1475041948 /home/sebastian/Documentos/AEFramework/include/CheapSigmoid.h
+	"Sigmoid.h"
+	"Random.h"
+
+1475042019 /home/sebastian/Documentos/AEFramework/include/Sigmoid.h
+	"ActivationFunction.h"
+	"Random.h"
+
+1477270340 /home/sebastian/Documentos/AEFramework/include/ActivationFunction.h
+	"Random.h"
+
+1471323322 /home/sebastian/Documentos/AEFramework/include/Random.h
+
+1471323323 source:/home/sebastian/Documentos/AEFramework/src/GenericException.cpp
+	"GenericException.h"
+
+1471323323 /home/sebastian/Documentos/AEFramework/include/GenericException.h
+	<exception>
+
+1471934580 source:/home/sebastian/Documentos/AEFramework/src/Identity.cpp
+	"Identity.h"
+	<stdio.h>
+
+1471934580 /home/sebastian/Documentos/AEFramework/include/Identity.h
+	"ActivationFunction.h"
+
+1472017562 source:/home/sebastian/Documentos/AEFramework/src/InnovationDB.cpp
+	"InnovationDB.h"
+	"Sigmoid.h"
+
+1471323323 /home/sebastian/Documentos/AEFramework/include/InnovationDB.h
+	<vector>
+	"Innovations.h"
+	"NeuronType.h"
+	"NEATNeuron.h"
+
+1471323323 /home/sebastian/Documentos/AEFramework/include/Innovations.h
+	"NeuronType.h"
+
+1471323322 /home/sebastian/Documentos/AEFramework/include/NeuronType.h
+
+1471934796 /home/sebastian/Documentos/AEFramework/include/NEATNeuron.h
+	<iostream>
+	"NeuronType.h"
+	"ActivationFunction.h"
+	"Random.h"
+
+1477270340 source:/home/sebastian/Documentos/AEFramework/src/NEATCandidateFactory.cpp
+	"NEATCandidateFactory.h"
+	"Identity.h"
+	"Sigmoid.h"
+	"CheapSigmoid.h"
+	"Tanh.h"
+	"Gaussian.h"
+	"ReLU.h"
+
+1471916471 /home/sebastian/Documentos/AEFramework/include/NEATCandidateFactory.h
+	"NEATGenome.h"
+	"Random.h"
+	"InnovationDB.h"
+	"CandidateFactory.h"
+
+1472015720 /home/sebastian/Documentos/AEFramework/include/NEATGenome.h
+	<vector>
+	<iostream>
+	"NEATNeuron.h"
+	"NEATLink.h"
+	"InnovationDB.h"
+
+1471926328 /home/sebastian/Documentos/AEFramework/include/NEATLink.h
+	<iostream>
+	"Random.h"
+
+1471323323 /home/sebastian/Documentos/AEFramework/include/CandidateFactory.h
+	<vector>
+	"Random.h"
+	"GenericException.h"
+
+1477646507 source:/home/sebastian/Documentos/AEFramework/src/NEATEvolutionEngine.cpp
+	<math.h>
+	"NEATEvolutionEngine.h"
+	"PlatformSpecific.h"
+	<stdio.h>
+
+1477637544 /home/sebastian/Documentos/AEFramework/include/NEATEvolutionEngine.h
+	<vector>
+	"ParallelEvolutionEngine.h"
+	"NEATSelectionStrategy.h"
+	"NEATGenome.h"
+	"NEATSpecies.h"
+	"NEATParams.h"
+	"InnovationDB.h"
+	"NEATCandidateFactory.h"
+	<list>
+
+1473672539 /home/sebastian/Documentos/AEFramework/include/ParallelEvolutionEngine.h
+	<SimpleEvolutionEngine.h>
+	"PlatformSpecific.h"
+	<omp.h>
+
+1474004299 /home/sebastian/Documentos/AEFramework/include/SimpleEvolutionEngine.h
+	<vector>
+	"EvolutionEngine.h"
+	"EvolutionObserver.h"
+	"Random.h"
+	"CandidateFactory.h"
+	"FitnessEvaluator.h"
+	"TerminationCondition.h"
+	<exception>
+	"GenericException.h"
+	<cmath>
+	"PopulationData.h"
+	"EvolutionUtils.h"
+	"EvolutionaryOperator.h"
+	"SelectionStrategy.h"
+
+1471640064 /home/sebastian/Documentos/AEFramework/include/EvolutionEngine.h
+	<vector>
+	<math.h>
+	<stdlib.h>
+	<time.h>
+	"TerminationCondition.h"
+	"EvaluatedCandidate.h"
+	"EvolutionObserver.h"
+	"FinalStatistics.h"
+	"GenericException.h"
+
+1471323322 /home/sebastian/Documentos/AEFramework/include/TerminationCondition.h
+	"PopulationData.h"
+
+1471323322 /home/sebastian/Documentos/AEFramework/include/PopulationData.h
+
+1471323323 /home/sebastian/Documentos/AEFramework/include/EvaluatedCandidate.h
+
+1471323323 /home/sebastian/Documentos/AEFramework/include/EvolutionObserver.h
+	"PopulationData.h"
+
+1471323323 /home/sebastian/Documentos/AEFramework/include/FinalStatistics.h
+	"PopulationData.h"
+	<vector>
+	"EvaluatedCandidate.h"
+
+1471323323 /home/sebastian/Documentos/AEFramework/include/FitnessEvaluator.h
+	<vector>
+
+1471323323 /home/sebastian/Documentos/AEFramework/include/EvolutionUtils.h
+	<vector>
+	"PopulationData.h"
+	"Random.h"
+	"EvaluatedCandidate.h"
+	"TerminationCondition.h"
+	<algorithm>
+	<math.h>
+
+1471323323 /home/sebastian/Documentos/AEFramework/include/EvolutionaryOperator.h
+	<vector>
+	"Random.h"
+
+1471323322 /home/sebastian/Documentos/AEFramework/include/SelectionStrategy.h
+	<vector>
+	"Random.h"
+
+1477645436 /home/sebastian/Documentos/AEFramework/include/PlatformSpecific.h
+	<time.h>
+
+1471323322 /home/sebastian/Documentos/AEFramework/include/NEATSelectionStrategy.h
+	<vector>
+	"Random.h"
+	"NEATGenome.h"
+	"EvaluatedCandidate.h"
+
+1471915095 /home/sebastian/Documentos/AEFramework/include/NEATSpecies.h
+	<vector>
+	"NEATGenome.h"
+	"EvaluatedCandidate.h"
+
+1473920159 /home/sebastian/Documentos/AEFramework/include/NEATParams.h
+
+1475904764 source:/home/sebastian/Documentos/AEFramework/src/NEATGenome.cpp
+	"NEATGenome.h"
+	<cmath>
+	<stdio.h>
+
+1471926758 source:/home/sebastian/Documentos/AEFramework/src/NEATLink.cpp
+	"NEATLink.h"
+
+1477270340 source:/home/sebastian/Documentos/AEFramework/src/NEATNeuron.cpp
+	"NEATNeuron.h"
+	"Sigmoid.h"
+	"Tanh.h"
+	"Identity.h"
+	"CheapSigmoid.h"
+	"Gaussian.h"
+	"ReLU.h"
+
+1471915095 source:/home/sebastian/Documentos/AEFramework/src/NEATSpecies.cpp
+	"NEATSpecies.h"
+
+1471997857 source:/home/sebastian/Documentos/AEFramework/src/NEATStochasticUniversalSampling.cpp
+	"NEATStochasticUniversalSampling.h"
+	<math.h>
+
+1471323322 /home/sebastian/Documentos/AEFramework/include/NEATStochasticUniversalSampling.h
+	<vector>
+	"NEATSelectionStrategy.h"
+
+1471323323 source:/home/sebastian/Documentos/AEFramework/src/OwnAEUtils.cpp
+	"OwnAEUtils.h"
+	<math.h>
+
+1471323322 /home/sebastian/Documentos/AEFramework/include/OwnAEUtils.h
+
+1477649088 source:/home/sebastian/Documentos/AEFramework/src/PlatformSpecific.cpp
+	"PlatformSpecific.h"
+	<windows.h>
+	<unistd.h>
+	<time.h>
+
+1475041985 source:/home/sebastian/Documentos/AEFramework/src/Sigmoid.cpp
+	"Sigmoid.h"
+	<math.h>
+	<stdio.h>
+
+1473402068 /home/sebastian/Documentos/AEFramework/include/Parameters.h
+	"NEATParams.h"
+	"ActivationFunction.h"
+
+1471323323 /home/sebastian/Documentos/AEFramework/include/Constants.h
+
+1471323322 /home/sebastian/Documentos/AEFramework/include/XorShift128.h
+	<stdint.h>
+	<Random.h>
+
+1471323323 /home/sebastian/Documentos/AEFramework/include/GenerationCount.h
+	<TerminationCondition.h>
+	"GenericException.h"
+	"PopulationData.h"
+
+1472012659 /home/sebastian/Documentos/AEFramework/include/GenerationObserver.h
+	<EvolutionObserver.h>
+
+1472013291 /home/sebastian/Documentos/AEFramework/include/NEATObserver.h
+	<EvolutionObserver.h>
+	<NEATGenome.h>
+
+1473918767 source:/home/sebastian/Documentos/AEFramework/src/XorShift128.cpp
+	"XorShift128.h"
+	"PlatformSpecific.h"
+	<stdio.h>
+	<cmath>
+
+1477272421 source:/home/tecno_1994/Tesis/learnes/AEFramework/src/CheapSigmoid.cpp
+	"CheapSigmoid.h"
+	<math.h>
+	<stdio.h>
+
+1477272421 /home/tecno_1994/Tesis/learnes/AEFramework/include/CheapSigmoid.h
+	"Sigmoid.h"
+	"Random.h"
+
+1477272421 /home/tecno_1994/Tesis/learnes/AEFramework/include/Sigmoid.h
+	"ActivationFunction.h"
+	"Random.h"
+
+1477272421 /home/tecno_1994/Tesis/learnes/AEFramework/include/ActivationFunction.h
+	"Random.h"
+
+1477272421 /home/tecno_1994/Tesis/learnes/AEFramework/include/Random.h
+
+1477272421 source:/home/tecno_1994/Tesis/learnes/AEFramework/src/GenericException.cpp
+	"GenericException.h"
+
+1477272421 /home/tecno_1994/Tesis/learnes/AEFramework/include/GenericException.h
+	<exception>
+
+1477272421 source:/home/tecno_1994/Tesis/learnes/AEFramework/src/Identity.cpp
+	"Identity.h"
+	<stdio.h>
+
+1477272421 /home/tecno_1994/Tesis/learnes/AEFramework/include/Identity.h
+	"ActivationFunction.h"
+
+1477272421 source:/home/tecno_1994/Tesis/learnes/AEFramework/src/InnovationDB.cpp
+	"InnovationDB.h"
+	"Sigmoid.h"
+
+1477272421 /home/tecno_1994/Tesis/learnes/AEFramework/include/InnovationDB.h
+	<vector>
+	"Innovations.h"
+	"NeuronType.h"
+	"NEATNeuron.h"
+
+1477272421 /home/tecno_1994/Tesis/learnes/AEFramework/include/Innovations.h
+	"NeuronType.h"
+
+1477272421 /home/tecno_1994/Tesis/learnes/AEFramework/include/NeuronType.h
+
+1477272421 /home/tecno_1994/Tesis/learnes/AEFramework/include/NEATNeuron.h
+	<iostream>
+	"NeuronType.h"
+	"ActivationFunction.h"
+	"Random.h"
+
+1477272421 source:/home/tecno_1994/Tesis/learnes/AEFramework/src/NEATCandidateFactory.cpp
+	"NEATCandidateFactory.h"
+	"Identity.h"
+	"Sigmoid.h"
+	"CheapSigmoid.h"
+	"Tanh.h"
+	"Gaussian.h"
+	"ReLU.h"
+
+1477272421 /home/tecno_1994/Tesis/learnes/AEFramework/include/NEATCandidateFactory.h
+	"NEATGenome.h"
+	"Random.h"
+	"InnovationDB.h"
+	"CandidateFactory.h"
+
+1477272421 /home/tecno_1994/Tesis/learnes/AEFramework/include/NEATGenome.h
+	<vector>
+	<iostream>
+	"NEATNeuron.h"
+	"NEATLink.h"
+	"InnovationDB.h"
+
+1477272421 /home/tecno_1994/Tesis/learnes/AEFramework/include/NEATLink.h
+	<iostream>
+	"Random.h"
+
+1477272421 /home/tecno_1994/Tesis/learnes/AEFramework/include/CandidateFactory.h
+	<vector>
+	"Random.h"
+	"GenericException.h"
+
+1477903718 source:/home/tecno_1994/Tesis/learnes/AEFramework/src/NEATEvolutionEngine.cpp
+	<math.h>
+	"NEATEvolutionEngine.h"
+	"PlatformSpecific.h"
+	<stdio.h>
+
+1477646865 /home/tecno_1994/Tesis/learnes/AEFramework/include/NEATEvolutionEngine.h
+	<vector>
+	"ParallelEvolutionEngine.h"
+	"NEATSelectionStrategy.h"
+	"NEATGenome.h"
+	"NEATSpecies.h"
+	"NEATParams.h"
+	"InnovationDB.h"
+	"NEATCandidateFactory.h"
+	<list>
+
+1477980760 /home/tecno_1994/Tesis/learnes/AEFramework/include/ParallelEvolutionEngine.h
+	<SimpleEvolutionEngine.h>
+	"PlatformSpecific.h"
+	<omp.h>
+
+1477272421 /home/tecno_1994/Tesis/learnes/AEFramework/include/SimpleEvolutionEngine.h
+	<vector>
+	"EvolutionEngine.h"
+	"EvolutionObserver.h"
+	"Random.h"
+	"CandidateFactory.h"
+	"FitnessEvaluator.h"
+	"TerminationCondition.h"
+	<exception>
+	"GenericException.h"
+	<cmath>
+	"PopulationData.h"
+	"EvolutionUtils.h"
+	"EvolutionaryOperator.h"
+	"SelectionStrategy.h"
+
+1477272421 /home/tecno_1994/Tesis/learnes/AEFramework/include/EvolutionEngine.h
+	<vector>
+	<math.h>
+	<stdlib.h>
+	<time.h>
+	"TerminationCondition.h"
+	"EvaluatedCandidate.h"
+	"EvolutionObserver.h"
+	"FinalStatistics.h"
+	"GenericException.h"
+
+1477272421 /home/tecno_1994/Tesis/learnes/AEFramework/include/TerminationCondition.h
+	"PopulationData.h"
+
+1477272421 /home/tecno_1994/Tesis/learnes/AEFramework/include/PopulationData.h
+
+1477272421 /home/tecno_1994/Tesis/learnes/AEFramework/include/EvaluatedCandidate.h
+
+1477272421 /home/tecno_1994/Tesis/learnes/AEFramework/include/EvolutionObserver.h
+	"PopulationData.h"
+
+1477272421 /home/tecno_1994/Tesis/learnes/AEFramework/include/FinalStatistics.h
+	"PopulationData.h"
+	<vector>
+	"EvaluatedCandidate.h"
+
+1477272421 /home/tecno_1994/Tesis/learnes/AEFramework/include/FitnessEvaluator.h
+	<vector>
+
+1477272421 /home/tecno_1994/Tesis/learnes/AEFramework/include/EvolutionUtils.h
+	<vector>
+	"PopulationData.h"
+	"Random.h"
+	"EvaluatedCandidate.h"
+	"TerminationCondition.h"
+	<algorithm>
+	<math.h>
+
+1477272421 /home/tecno_1994/Tesis/learnes/AEFramework/include/EvolutionaryOperator.h
+	<vector>
+	"Random.h"
+
+1477272421 /home/tecno_1994/Tesis/learnes/AEFramework/include/SelectionStrategy.h
+	<vector>
+	"Random.h"
+
+1477646865 /home/tecno_1994/Tesis/learnes/AEFramework/include/PlatformSpecific.h
+	<time.h>
+
+1477272421 /home/tecno_1994/Tesis/learnes/AEFramework/include/NEATSelectionStrategy.h
+	<vector>
+	"Random.h"
+	"NEATGenome.h"
+	"EvaluatedCandidate.h"
+
+1477272421 /home/tecno_1994/Tesis/learnes/AEFramework/include/NEATSpecies.h
+	<vector>
+	"NEATGenome.h"
+	"EvaluatedCandidate.h"
+
+1477272421 /home/tecno_1994/Tesis/learnes/AEFramework/include/NEATParams.h
+
+1477272421 source:/home/tecno_1994/Tesis/learnes/AEFramework/src/NEATGenome.cpp
+	"NEATGenome.h"
+	<cmath>
+	<stdio.h>
+
+1477272421 source:/home/tecno_1994/Tesis/learnes/AEFramework/src/NEATLink.cpp
+	"NEATLink.h"
+
+1477900705 source:/home/tecno_1994/Tesis/learnes/AEFramework/src/NEATNeuron.cpp
+	"NEATNeuron.h"
+	"Sigmoid.h"
+	"Tanh.h"
+	"Identity.h"
+	"CheapSigmoid.h"
+	"Gaussian.h"
+	"ReLU.h"
+
+1477272421 source:/home/tecno_1994/Tesis/learnes/AEFramework/src/NEATSpecies.cpp
+	"NEATSpecies.h"
+
+1477272421 source:/home/tecno_1994/Tesis/learnes/AEFramework/src/NEATStochasticUniversalSampling.cpp
+	"NEATStochasticUniversalSampling.h"
+	<math.h>
+
+1477272421 /home/tecno_1994/Tesis/learnes/AEFramework/include/NEATStochasticUniversalSampling.h
+	<vector>
+	"NEATSelectionStrategy.h"
+
+1477272421 source:/home/tecno_1994/Tesis/learnes/AEFramework/src/OwnAEUtils.cpp
+	"OwnAEUtils.h"
+	<math.h>
+
+1477272421 /home/tecno_1994/Tesis/learnes/AEFramework/include/OwnAEUtils.h
+
+1477710705 source:/home/tecno_1994/Tesis/learnes/AEFramework/src/PlatformSpecific.cpp
+	"PlatformSpecific.h"
+	<windows.h>
+	<unistd.h>
+	<time.h>
+
+1477272421 source:/home/tecno_1994/Tesis/learnes/AEFramework/src/Sigmoid.cpp
+	"Sigmoid.h"
+	<math.h>
+	<stdio.h>
+
+1477272421 source:/home/tecno_1994/Tesis/learnes/AEFramework/src/XorShift128.cpp
+	"XorShift128.h"
+	"PlatformSpecific.h"
+	<stdio.h>
+	<cmath>
+
+1477272421 /home/tecno_1994/Tesis/learnes/AEFramework/include/XorShift128.h
+	<stdint.h>
+	<Random.h>
+
+1479091493 source:/home/tecno_1994/Tesis/learnes/ANNTrainerAE/main.cpp
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<vector>
+	<fstream>
+	<iostream>
+	<exception>
+	"Parameters.h"
+	"FinalStatistics.h"
+	"EvolutionaryOperator.h"
+	"Constants.h"
+	"XorShift128.h"
+	"GenerationCount.h"
+	"GenerationObserver.h"
+	"NEATCandidateFactory.h"
+	"NEATSelectionStrategy.h"
+	"NEATEvolutionEngine.h"
+	"NEATParams.h"
+	"NEATStochasticUniversalSampling.h"
+	"FCEUXEvaluator.h"
+	"NEATObserver.h"
+
+1477902462 /home/tecno_1994/Tesis/learnes/ANNTrainerAE/include/Parameters.h
+	"NEATParams.h"
+	"ActivationFunction.h"
+
+1477272421 /home/tecno_1994/Tesis/learnes/AEFramework/include/Constants.h
+
+1477272421 /home/tecno_1994/Tesis/learnes/AEFramework/include/GenerationCount.h
+	<TerminationCondition.h>
+	"GenericException.h"
+	"PopulationData.h"
+
+1477272421 /home/tecno_1994/Tesis/learnes/AEFramework/include/GenerationObserver.h
+	<EvolutionObserver.h>
+
+1477272421 /home/tecno_1994/Tesis/learnes/ANNTrainerAE/include/FCEUXEvaluator.h
+	"Parameters.h"
+	"FitnessEvaluator.h"
+	"NEATGenome.h"
+
+1477272421 /home/tecno_1994/Tesis/learnes/AEFramework/include/NEATObserver.h
+	<EvolutionObserver.h>
+	<NEATGenome.h>
+
+1478852486 source:/home/tecno_1994/Tesis/learnes/ANNTrainerAE/src/FCEUXEvaluator.cpp
+	<stdlib.h>
+	<cstring>
+	"FCEUXEvaluator.h"
+	"Constants.h"
+	<stdio.h>
+	"NeuronType.h"
+	"XorShift128.h"
+	"GenericException.h"
+
+1477272421 /home/tecno_1994/Tesis/learnes/AEFramework/include/Tanh.h
+	"ActivationFunction.h"
+	"Random.h"
+
+1477272421 source:/home/tecno_1994/Tesis/learnes/AEFramework/src/Tanh.cpp
+	"Tanh.h"
+	<math.h>
+	<stdio.h>
+
+1477272421 source:/home/tecno_1994/Tesis/learnes/AEFramework/src/Gaussian.cpp
+	"Gaussian.h"
+	<math.h>
+	<stdio.h>
+
+1477272421 /home/tecno_1994/Tesis/learnes/AEFramework/include/Gaussian.h
+	"ActivationFunction.h"
+	"Random.h"
+	<math.h>
+
+1477272421 source:/home/tecno_1994/Tesis/learnes/AEFramework/src/ReLU.cpp
+	"ReLU.h"
+	<math.h>
+	<stdio.h>
+
+1477272421 /home/tecno_1994/Tesis/learnes/AEFramework/include/ReLU.h
+	"ActivationFunction.h"
+	"Random.h"
+
+1477270340 source:/home/sebastian/Documentos/AEFramework/src/Gaussian.cpp
+	"Gaussian.h"
+	<math.h>
+	<stdio.h>
+
+1477270340 /home/sebastian/Documentos/AEFramework/include/Gaussian.h
+	"ActivationFunction.h"
+	"Random.h"
+	<math.h>
+
+1476683299 /home/sebastian/Documentos/AEFramework/include/Tanh.h
+	"ActivationFunction.h"
+	"Random.h"
+
+1477270340 /home/sebastian/Documentos/AEFramework/include/ReLU.h
+	"ActivationFunction.h"
+	"Random.h"
+
+1477270340 source:/home/sebastian/Documentos/AEFramework/src/ReLU.cpp
+	"ReLU.h"
+	<math.h>
+	<stdio.h>
+
+1476683299 source:/home/sebastian/Documentos/AEFramework/src/Tanh.cpp
+	"Tanh.h"
+	<math.h>
+	<stdio.h>
+

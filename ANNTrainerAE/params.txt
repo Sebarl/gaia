@@ -1,0 +1,28 @@
+100     // Number of generations to evolve
+64      // Population size
+1       // Number of individuals to preserve using elitism (per species)
+3       // Elitism threshold
+8       // Number of output neurons
+1       // Activation function type for the output neurons. 0 = Identity, 1 = Sigmoid
+0.8     // Crossover probability
+0.75    // Probability of disabling a link when it is disable in one parent
+0.5    // Probability to add a new neuron when mutating
+5       // Try to find a suitable link to put a neuron this number of times maximum
+0.8    // Probability to add a new link when mutating
+5       // Try to find two suitable neurons to link this number of times maximum
+0.1    // Probability that the added link is a loop
+5       // Try to find a suitable neuron to add a loop link this number of times maximum
+0.4     // Probability to mutate a link weight
+0.01     // Probability to replace a link weight with a random one
+0.1     // Probability to mutate a neuron activation function
+0.01    // Probability to replace a neuron activation function with a new one
+6       // Quantity of links to differentiate species
+-1      // Maximum number of neurons in a network (-1 for infinity)
+15      // Allowed number of generations without fitness improvement before killing a species
+25      // Young species age threshold
+45      // Old species age threshold
+1.5     // Bonus coefficient for being a young species
+0.7     // Penalty coefficient for being an old species
+4000    // Number of frames to emulate
+8       // Number of threads
+1       // Use other activation functions

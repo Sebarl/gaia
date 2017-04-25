@@ -1,0 +1,4 @@
+#!/bin/sh
+icpc -c -O3 -fPIC AI.cpp -o AI.o
+icpc -O3 -shared -o AI.so AI.o
+cp -f AI.so 'Fceux Headless/bin/AI.so'

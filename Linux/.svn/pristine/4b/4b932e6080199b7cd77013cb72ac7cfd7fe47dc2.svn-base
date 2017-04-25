@@ -1,0 +1,4 @@
+#!/bin/sh
+gcc -c -fPIC AI.cpp -o AI.o
+gcc -shared -o AI.so AI.o
+cp -f AI.so Fceux/bin/AI.so

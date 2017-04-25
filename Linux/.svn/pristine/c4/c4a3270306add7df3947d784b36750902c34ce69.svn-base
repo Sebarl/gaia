@@ -1,0 +1,158 @@
+#include <stdio.h>
+#include <string>
+#include <fstream>
+#include <vector>
+#include <ext/stdio_filebuf.h>
+
+#define uint8 unsigned char
+
+//inference functions
+
+void findStaticAndErraticLocations(std::vector<uint8>* RAMs, int* objectives){
+	double E, var, X, delta;	
+	for(int i=0;i<2048;i++){
+		E = 0;
+		var = 0;
+		for(int j=1;j<=RAMs->size()/2048;j++){
+			X = (double)(*RAMs)[i+2048*(j-1)];
+			delta = X - E;
+			E += delta/(double)j;
+			var += delta*(X - E);	
+
+		}			
+		var /=(double)(RAMs->size()/2048-1);
+		//magic number of extremely high caliber	
+		if(var < 0.17){
+			objectives[i]=-1;		
+		}
+		//erratic values test, experimiental, may be detrimental
+		else if(var > 12100){
+			objectives[i]=-2;		
+		}
+	}
+}
+
+void findRandomLocations(std::vector<uint8>* RAMs, int* objectives){
+	int* reps = new int[256];
+	double max, sum;
+	for(int i=0;i<2048;i++){
+		if(objectives[i]>=0){
+			for(int n=0;n<256;n++){
+				reps[n]=0;			
+			}
+			for(int j=1;j<=RAMs->size()/2048;j++){
+				reps[(*RAMs)[i+2048*(j-1)]]++;
+
+			}
+			max = 0;
+			sum = 0;
+			for(int n=0;n<256;n++){
+				sum += (double)reps[n];
+				if(max < (double)reps[n]){
+					max = (double) reps[n];
+				}		
+			}
+			
+			//check for abnormal maximum	
+			if((max*100.0/sum)>95.0){
+				objectives[i]=-3;		
+			}
+		}
+ 	}
+	delete [] reps;
+}
+
+void printMeMan(std::vector<uint8>* RAMs){
+	printf("  ");
+	for(int n=0;n<32;n++){
+		printf("\t%02X",n);
+	}
+	for(int a=0;a<64;a++){
+		printf("\t%02X",a*2);
+		for(int n=0;n<32;n++){	
+			printf("\t%d", (*RAMs)[n+a*32+2048*(RAMs->size()/2048-1)]);	
+ 		}
+		printf("\n");
+ 	}
+}
+//end of inference functions
+
+
+std::vector<uint8>* obtainRAMs(char* filename){
+        //invocar a fceux y obtener el resultado
+	std::vector<uint8>* input = new std::vector<uint8>();
+	int data;
+        char path[200];
+        sprintf(path, "cd \"../Fceux Headless/bin/\"; ./fceux -a %s Pinball.nes", filename);
+        FILE *fp = popen(path,"r");
+	int MAHCRAP = fileno(fp);
+	__gnu_cxx::stdio_filebuf<char> makeFilesGreatAgain(MAHCRAP, std::ios::in );// 1 CRAP
+	std::istream instr(&makeFilesGreatAgain);        
+		
+	while(instr >> data){	
+		input->push_back((uint8) data);
+	}
+	pclose(fp);
+	return input;
+}
+
+int main(int argc, char** argv){
+	
+	int gameCount = argc - 1;
+	std::vector<uint8>** games = new std::vector<uint8>*[gameCount];
+	for(int i = 0; i< gameCount; i++){
+		games[i] = obtainRAMs(argv[i+1]);
+	}
+
+	int* objectives = new int[2048];
+	for(int i=0;i<2048;i++){
+		objectives[i]=0;
+	}
+	
+	//INFER MY FRIEND, INFER!
+	for(int runs = 0; runs< gameCount;runs++){
+		findStaticAndErraticLocations(games[runs], objectives);
+		findRandomLocations(games[runs], objectives);
+		printMeMan(games[runs]);
+	}
+	
+        //generate output with analysis results
+	int stat = 0;
+	int erratic = 0;
+	int lowchange = 0;
+	printf("  ");
+	for(int n=0;n<32;n++){
+		printf("|%02X",n);
+	}
+	printf("\n");
+	for(int a=0;a<64;a++){
+		printf("%02X",a*2);
+		for(int n=0;n<32;n++){	
+			if(objectives[n+a*32] == -1){
+				printf("|S ");
+				stat++;
+			}
+			else if(objectives[n+a*32] == -2){
+				printf("|E ");
+				erratic++;
+			}
+			else if(objectives[n+a*32] == -3){
+				printf("|L ");
+				lowchange++;
+			}
+			else{	
+				printf("|%d ", objectives[n+a*32]);	
+			}
+ 		}
+		printf("\n");
+ 	}
+	printf("\nTotal number of static ram locations: %d.\nTotal number of dynamic ram locations: %d.\nTotal number of low changing ram locations: %d.\nPercentage of ignored ram: %lf.", stat, erratic, lowchange, (double)(stat + erratic + lowchange)*100.0/2048.0);
+	
+	//teardown
+	for(int i=0; i < gameCount; i++){
+		delete games[i];
+	}
+ 	delete [] games;
+	delete [] objectives;
+	return 0;
+}

@@ -1,0 +1,6 @@
+#!/bin/bash
+scons OPSEVENUP=0 MMIC=1
+scons OPSEVENUP=0 MMIC=1 install --prefix=$HOME/NetBeansProjects/Linux/FceuxMic
+cd ..
+cd FceuxMic
+zip -r ../FceuxMic.zip * 

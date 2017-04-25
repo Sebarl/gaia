@@ -1,0 +1,51 @@
+file /home/sebastian/Documentos/Linux/FceuxHeadlessSrc/SConstruct,line 110:
+	Configure(confdir = .sconf_temp)
+scons: Configure: Checking for C library dw... 
+scons: Configure: ".sconf_temp/conftest_0.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_0.c <-
+  |  |
+  |  |
+  |  |
+  |  |int
+  |  |main() {
+  |  |  
+  |  |return 0;
+  |  |}
+  |  |
+  |
+gcc -o .sconf_temp/conftest_0.o -c -Wall -Wno-write-strings -Wno-sign-compare -DPUBLIC_RELEASE .sconf_temp/conftest_0.c
+gcc -o .sconf_temp/conftest_0 .sconf_temp/conftest_0.o -ldw
+/bin/ld: cannot find -ldw
+collect2: error: ld returned 1 exit status
+scons: Configure: no
+
+scons: Configure: Checking for C function asprintf()... 
+scons: Configure: ".sconf_temp/conftest_1.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_1.c <-
+  |  |
+  |  |
+  |  |#include <assert.h>
+  |  |
+  |  |#ifdef __cplusplus
+  |  |extern "C"
+  |  |#endif
+  |  |char asprintf();
+  |  |
+  |  |int main() {
+  |  |#if defined (__stub_asprintf) || defined (__stub___asprintf)
+  |  |  fail fail fail
+  |  |#else
+  |  |  asprintf();
+  |  |#endif
+  |  |
+  |  |  return 0;
+  |  |}
+  |  |
+  |
+gcc -o .sconf_temp/conftest_1.o -c -Wall -Wno-write-strings -Wno-sign-compare -DPUBLIC_RELEASE .sconf_temp/conftest_1.c
+gcc -o .sconf_temp/conftest_1 .sconf_temp/conftest_1.o
+scons: Configure: yes
+
+

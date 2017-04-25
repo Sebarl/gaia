@@ -1,0 +1,7 @@
+#ifndef CONSTANTS_H
+#define CONSTANTS_H
+
+#define INTERVAL_LENGTH 1.0
+#define EQUAL_FACTOR 0.25
+
+#endif // CONSTANTS_H

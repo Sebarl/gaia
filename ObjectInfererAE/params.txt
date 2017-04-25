@@ -1,0 +1,15 @@
+40	//Number of generations to evolve (Number of epochs if Islands are used)
+100	//Population size
+20      //Number of seed candidates from Stage 1
+0.9	//Crossover probability
+0.1	//Mutation probability
+1 	//Number of individuals to preserve using elitism (if using Islands elitism for each island)
+1	//Enable islands
+4	//Number of islands
+25	//Epoch length
+5	//Number of individuals to migrate
+4000	//Number of frames to emulate
+0	//Game instance ID
+2       //Number of threads per island
+4	//Number of threads for the islandEngine
+0	//Enable MIC

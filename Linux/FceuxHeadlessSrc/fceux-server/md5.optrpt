@@ -1,0 +1,77 @@
+
+Begin optimization report for: md5_starts(md5_context *)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at fceux-server/md5.cpp(58,5)
+   remark #15389: vectorization support: reference ctx has unaligned access
+   remark #15388: vectorization support: reference .L_2__cnst_pck.0.var has aligned access
+   remark #15381: vectorization support: unaligned access used inside loop body
+   remark #15427: loop was completely unrolled
+   remark #15301: BLOCK WAS VECTORIZED
+   remark #15448: unmasked aligned unit stride loads: 1 
+   remark #15451: unmasked unaligned unit stride stores: 1 
+   remark #15475: --- begin vector loop cost summary ---
+   remark #15476: scalar loop cost: 4 
+   remark #15477: vector loop cost: 1.250 
+   remark #15478: estimated potential speedup: 2.000 
+   remark #15479: lightweight vector operations: 2 
+   remark #15480: medium-overhead vector operations: 1 
+   remark #15488: --- end vector loop cost summary ---
+LOOP END
+===========================================================================
+
+Begin optimization report for: md5_update(md5_context *, uint8 *, uint32)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at fceux-server/md5.cpp(211,5)
+   remark #15382: vectorization support: call to function md5_process(md5_context *, uint8 *) cannot be vectorized   [ fceux-server/md5.cpp(213,9) ]
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization
+LOOP END
+===========================================================================
+
+Begin optimization report for: md5_finish(md5_context *, uint8 *)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at fceux-server/md5.cpp(211,5) inlined into fceux-server/md5.cpp(243,5)
+   remark #15382: vectorization support: call to function md5_process(md5_context *, uint8 *) cannot be vectorized   [ fceux-server/md5.cpp(213,9) ]
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization
+LOOP END
+
+LOOP BEGIN at fceux-server/md5.cpp(211,5) inlined into fceux-server/md5.cpp(244,5)
+   remark #15382: vectorization support: call to function md5_process(md5_context *, uint8 *) cannot be vectorized   [ fceux-server/md5.cpp(213,9) ]
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization
+LOOP END
+===========================================================================
+
+Begin optimization report for: md5_asciistr(uint8 *)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at fceux-server/md5.cpp(260,2)
+   remark #15389: vectorization support: reference str has unaligned access   [ fceux-server/md5.cpp(262,3) ]
+   remark #15389: vectorization support: reference digest has unaligned access   [ fceux-server/md5.cpp(262,3) ]
+   remark #15389: vectorization support: reference digest has unaligned access   [ fceux-server/md5.cpp(263,3) ]
+   remark #15381: vectorization support: unaligned access used inside loop body
+   remark #15427: loop was completely unrolled
+   remark #15399: vectorization support: unroll factor set to 2
+   remark #15300: LOOP WAS VECTORIZED
+   remark #15450: unmasked unaligned unit stride loads: 1 
+   remark #15451: unmasked unaligned unit stride stores: 1 
+   remark #15458: masked indexed (or gather) loads: 2 
+   remark #15462: unmasked indexed (or gather) loads: 2 
+   remark #15475: --- begin vector loop cost summary ---
+   remark #15476: scalar loop cost: 15 
+   remark #15477: vector loop cost: 6.620 
+   remark #15478: estimated potential speedup: 2.140 
+   remark #15479: lightweight vector operations: 13 
+   remark #15480: medium-overhead vector operations: 2 
+   remark #15488: --- end vector loop cost summary ---
+LOOP END
+===========================================================================

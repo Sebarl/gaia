@@ -1,0 +1,849 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="fceux" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug x64">
+				<Option output="vc10_fceux" prefix_auto="1" extension_auto="1" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DMSVC" />
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="-D_WIN32_WINDOWS=0x0410" />
+					<Add option="-DWINVER=0x0410" />
+					<Add option="-DNETWORK" />
+					<Add option="-DLSB_FIRST" />
+					<Add directory="../zlib" />
+				</Compiler>
+				<Linker>
+					<Add library="dxguid.lib" />
+					<Add library="winmm.lib" />
+					<Add library="dinput.lib" />
+					<Add library="ws2_32.lib" />
+					<Add library="ddraw.lib" />
+					<Add library="dsound.lib" />
+					<Add library="../src/drivers/win/lua/x64/lua51.lib" />
+				</Linker>
+			</Target>
+			<Target title="Release x64">
+				<Option output="vc10_fceux" prefix_auto="1" extension_auto="1" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DMSVC" />
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="-D_WIN32_WINDOWS=0x0410" />
+					<Add option="-DWINVER=0x0410" />
+					<Add option="-DNETWORK" />
+					<Add option="-DLSB_FIRST" />
+					<Add directory="../zlib" />
+				</Compiler>
+				<Linker>
+					<Add library="dxguid.lib" />
+					<Add library="winmm.lib" />
+					<Add library="dinput.lib" />
+					<Add library="ws2_32.lib" />
+					<Add library="ddraw.lib" />
+					<Add library="dsound.lib" />
+					<Add library="../src/drivers/win/lua/x64/lua51.lib" />
+				</Linker>
+			</Target>
+			<Target title="Release Win32">
+				<Option output="vc10_fceux" prefix_auto="1" extension_auto="1" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DMSVC" />
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="-D_WIN32_WINDOWS=0x0410" />
+					<Add option="-DWINVER=0x0410" />
+					<Add option="-DNETWORK" />
+					<Add option="-DLSB_FIRST" />
+					<Add option="-D_USE_32BIT_TIME_T" />
+					<Add option="-DFCEUDEF_DEBUGGER" />
+					<Add option="-D_USE_SHARED_MEMORY_" />
+					<Add option="-DNOMINMAX" />
+					<Add option="-DHAS_vsnprintf" />
+					<Add option="-D_S9XLUA_H" />
+					<Add directory="." />
+					<Add directory="../src/drivers/win/zlib" />
+					<Add directory="../src/drivers/win/directx" />
+					<Add directory="../src" />
+					<Add directory="../src/drivers/win/lua/include" />
+					<Add directory="userconfig" />
+					<Add directory="defaultconfig" />
+				</Compiler>
+				<Linker>
+					<Add library="Rpcrt4.lib" />
+					<Add library="comctl32.lib" />
+					<Add library="vfw32.lib" />
+					<Add library="winmm.lib" />
+					<Add library="ws2_32.lib" />
+					<Add library="htmlhelp.lib" />
+					<Add library="../src/drivers/win/directx/dsound.lib" />
+					<Add library="../src/drivers/win/directx/dxguid.lib" />
+					<Add library="../src/drivers/win/directx/ddraw.lib" />
+					<Add library="../src/drivers/win/directx/dinput.lib" />
+					<Add library="../src/drivers/win/lua/win32/lua51.lib" />
+					<Add library="luaperks.lib" />
+					<Add library="psapi.lib" />
+					<Add library="mpr.lib" />
+				</Linker>
+			</Target>
+			<Target title="Debug Win32">
+				<Option output="vc10_fceux" prefix_auto="1" extension_auto="1" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DMSVC" />
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="-D_WIN32_WINDOWS=0x0410" />
+					<Add option="-DWINVER=0x0410" />
+					<Add option="-DNETWORK" />
+					<Add option="-DLSB_FIRST" />
+					<Add option="-D_USE_32BIT_TIME_T" />
+					<Add option="-DFCEUDEF_DEBUGGER" />
+					<Add option="-D_USE_SHARED_MEMORY_" />
+					<Add option="-DNOMINMAX" />
+					<Add option="-DHAS_vsnprintf" />
+					<Add option="-D_S9XLUA_H" />
+					<Add directory="." />
+					<Add directory="../src/drivers/win/zlib" />
+					<Add directory="../src/drivers/win/directx" />
+					<Add directory="../src" />
+					<Add directory="../src/drivers/win/lua/include" />
+					<Add directory="userconfig" />
+					<Add directory="defaultconfig" />
+				</Compiler>
+				<Linker>
+					<Add library="Rpcrt4.lib" />
+					<Add library="comctl32.lib" />
+					<Add library="vfw32.lib" />
+					<Add library="winmm.lib" />
+					<Add library="ws2_32.lib" />
+					<Add library="htmlhelp.lib" />
+					<Add library="../src/drivers/win/directx/dsound.lib" />
+					<Add library="../src/drivers/win/directx/dxguid.lib" />
+					<Add library="../src/drivers/win/directx/ddraw.lib" />
+					<Add library="../src/drivers/win/directx/dinput.lib" />
+					<Add library="../src/drivers/win/lua/win32/lua51.lib" />
+					<Add library="LuaPerks.lib" />
+					<Add library="psapi.lib" />
+					<Add library="mpr.lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="../../../tasedit/psd/bmp/te_green_arrow.bmp" />
+		<Unit filename="../src/asm.cpp" />
+		<Unit filename="../src/asm.h" />
+		<Unit filename="../src/auxlib.lua" />
+		<Unit filename="../src/boards/01-222.cpp" />
+		<Unit filename="../src/boards/09-034a.cpp" />
+		<Unit filename="../src/boards/103.cpp" />
+		<Unit filename="../src/boards/106.cpp" />
+		<Unit filename="../src/boards/108.cpp" />
+		<Unit filename="../src/boards/112.cpp" />
+		<Unit filename="../src/boards/116.cpp" />
+		<Unit filename="../src/boards/117.cpp" />
+		<Unit filename="../src/boards/120.cpp" />
+		<Unit filename="../src/boards/121.cpp" />
+		<Unit filename="../src/boards/12in1.cpp" />
+		<Unit filename="../src/boards/15.cpp" />
+		<Unit filename="../src/boards/151.cpp" />
+		<Unit filename="../src/boards/156.cpp" />
+		<Unit filename="../src/boards/164.cpp" />
+		<Unit filename="../src/boards/168.cpp" />
+		<Unit filename="../src/boards/170.cpp" />
+		<Unit filename="../src/boards/175.cpp" />
+		<Unit filename="../src/boards/176.cpp" />
+		<Unit filename="../src/boards/177.cpp" />
+		<Unit filename="../src/boards/178.cpp" />
+		<Unit filename="../src/boards/18.cpp" />
+		<Unit filename="../src/boards/183.cpp" />
+		<Unit filename="../src/boards/185.cpp" />
+		<Unit filename="../src/boards/186.cpp" />
+		<Unit filename="../src/boards/187.cpp" />
+		<Unit filename="../src/boards/189.cpp" />
+		<Unit filename="../src/boards/193.cpp" />
+		<Unit filename="../src/boards/199.cpp" />
+		<Unit filename="../src/boards/206.cpp" />
+		<Unit filename="../src/boards/208.cpp" />
+		<Unit filename="../src/boards/222.cpp" />
+		<Unit filename="../src/boards/225.cpp" />
+		<Unit filename="../src/boards/228.cpp" />
+		<Unit filename="../src/boards/230.cpp" />
+		<Unit filename="../src/boards/232.cpp" />
+		<Unit filename="../src/boards/234.cpp" />
+		<Unit filename="../src/boards/235.cpp" />
+		<Unit filename="../src/boards/244.cpp" />
+		<Unit filename="../src/boards/246.cpp" />
+		<Unit filename="../src/boards/252.cpp" />
+		<Unit filename="../src/boards/253.cpp" />
+		<Unit filename="../src/boards/28.cpp" />
+		<Unit filename="../src/boards/32.cpp" />
+		<Unit filename="../src/boards/33.cpp" />
+		<Unit filename="../src/boards/34.cpp" />
+		<Unit filename="../src/boards/36.cpp" />
+		<Unit filename="../src/boards/3d-block.cpp" />
+		<Unit filename="../src/boards/40.cpp" />
+		<Unit filename="../src/boards/41.cpp" />
+		<Unit filename="../src/boards/411120-c.cpp" />
+		<Unit filename="../src/boards/42.cpp" />
+		<Unit filename="../src/boards/43.cpp" />
+		<Unit filename="../src/boards/46.cpp" />
+		<Unit filename="../src/boards/50.cpp" />
+		<Unit filename="../src/boards/51.cpp" />
+		<Unit filename="../src/boards/57.cpp" />
+		<Unit filename="../src/boards/603-5052.cpp" />
+		<Unit filename="../src/boards/62.cpp" />
+		<Unit filename="../src/boards/65.cpp" />
+		<Unit filename="../src/boards/67.cpp" />
+		<Unit filename="../src/boards/68.cpp" />
+		<Unit filename="../src/boards/69.cpp" />
+		<Unit filename="../src/boards/71.cpp" />
+		<Unit filename="../src/boards/72.cpp" />
+		<Unit filename="../src/boards/77.cpp" />
+		<Unit filename="../src/boards/79.cpp" />
+		<Unit filename="../src/boards/80.cpp" />
+		<Unit filename="../src/boards/8157.cpp" />
+		<Unit filename="../src/boards/82.cpp" />
+		<Unit filename="../src/boards/8237.cpp" />
+		<Unit filename="../src/boards/830118C.cpp" />
+		<Unit filename="../src/boards/88.cpp" />
+		<Unit filename="../src/boards/90.cpp" />
+		<Unit filename="../src/boards/91.cpp" />
+		<Unit filename="../src/boards/96.cpp" />
+		<Unit filename="../src/boards/99.cpp" />
+		<Unit filename="../src/boards/__dummy_mapper.cpp" />
+		<Unit filename="../src/boards/a9746.cpp" />
+		<Unit filename="../src/boards/ac-08.cpp" />
+		<Unit filename="../src/boards/addrlatch.cpp" />
+		<Unit filename="../src/boards/ax5705.cpp" />
+		<Unit filename="../src/boards/bandai.cpp" />
+		<Unit filename="../src/boards/bb.cpp" />
+		<Unit filename="../src/boards/bmc13in1jy110.cpp" />
+		<Unit filename="../src/boards/bmc42in1r.cpp" />
+		<Unit filename="../src/boards/bmc64in1nr.cpp" />
+		<Unit filename="../src/boards/bmc70in1.cpp" />
+		<Unit filename="../src/boards/bonza.cpp" />
+		<Unit filename="../src/boards/bs-5.cpp" />
+		<Unit filename="../src/boards/cityfighter.cpp" />
+		<Unit filename="../src/boards/dance2000.cpp" />
+		<Unit filename="../src/boards/datalatch.cpp" />
+		<Unit filename="../src/boards/dream.cpp" />
+		<Unit filename="../src/boards/edu2000.cpp" />
+		<Unit filename="../src/boards/emu2413.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/boards/famicombox.cpp" />
+		<Unit filename="../src/boards/ffe.cpp" />
+		<Unit filename="../src/boards/fk23c.cpp" />
+		<Unit filename="../src/boards/ghostbusters63in1.cpp" />
+		<Unit filename="../src/boards/gs-2004.cpp" />
+		<Unit filename="../src/boards/gs-2013.cpp" />
+		<Unit filename="../src/boards/h2288.cpp" />
+		<Unit filename="../src/boards/karaoke.cpp" />
+		<Unit filename="../src/boards/kof97.cpp" />
+		<Unit filename="../src/boards/ks7012.cpp" />
+		<Unit filename="../src/boards/ks7013.cpp" />
+		<Unit filename="../src/boards/ks7017.cpp" />
+		<Unit filename="../src/boards/ks7030.cpp" />
+		<Unit filename="../src/boards/ks7031.cpp" />
+		<Unit filename="../src/boards/ks7032.cpp" />
+		<Unit filename="../src/boards/ks7037.cpp" />
+		<Unit filename="../src/boards/ks7057.cpp" />
+		<Unit filename="../src/boards/le05.cpp" />
+		<Unit filename="../src/boards/lh32.cpp" />
+		<Unit filename="../src/boards/lh53.cpp" />
+		<Unit filename="../src/boards/malee.cpp" />
+		<Unit filename="../src/boards/mihunche.cpp" />
+		<Unit filename="../src/boards/mmc1.cpp" />
+		<Unit filename="../src/boards/mmc2and4.cpp" />
+		<Unit filename="../src/boards/mmc3.cpp" />
+		<Unit filename="../src/boards/mmc5.cpp" />
+		<Unit filename="../src/boards/n106.cpp" />
+		<Unit filename="../src/boards/n625092.cpp" />
+		<Unit filename="../src/boards/novel.cpp" />
+		<Unit filename="../src/boards/onebus.cpp" />
+		<Unit filename="../src/boards/pec-586.cpp" />
+		<Unit filename="../src/boards/sa-9602b.cpp" />
+		<Unit filename="../src/boards/sachen.cpp" />
+		<Unit filename="../src/boards/sc-127.cpp" />
+		<Unit filename="../src/boards/sheroes.cpp" />
+		<Unit filename="../src/boards/sl1632.cpp" />
+		<Unit filename="../src/boards/subor.cpp" />
+		<Unit filename="../src/boards/super24.cpp" />
+		<Unit filename="../src/boards/supervision.cpp" />
+		<Unit filename="../src/boards/t-227-1.cpp" />
+		<Unit filename="../src/boards/t-262.cpp" />
+		<Unit filename="../src/boards/tengen.cpp" />
+		<Unit filename="../src/boards/tf-1201.cpp" />
+		<Unit filename="../src/boards/transformer.cpp" />
+		<Unit filename="../src/boards/vrc1.cpp" />
+		<Unit filename="../src/boards/vrc2and4.cpp" />
+		<Unit filename="../src/boards/vrc3.cpp" />
+		<Unit filename="../src/boards/vrc5.cpp" />
+		<Unit filename="../src/boards/vrc6.cpp" />
+		<Unit filename="../src/boards/vrc7.cpp" />
+		<Unit filename="../src/boards/vrc7p.cpp" />
+		<Unit filename="../src/boards/yoko.cpp" />
+		<Unit filename="../src/cart.cpp" />
+		<Unit filename="../src/cart.h" />
+		<Unit filename="../src/cheat.cpp" />
+		<Unit filename="../src/cheat.h" />
+		<Unit filename="../src/conddebug.cpp" />
+		<Unit filename="../src/conddebug.h" />
+		<Unit filename="../src/config.cpp" />
+		<Unit filename="../src/config.h" />
+		<Unit filename="../src/debug.cpp" />
+		<Unit filename="../src/debug.h" />
+		<Unit filename="../src/drawing.cpp" />
+		<Unit filename="../src/drawing.h" />
+		<Unit filename="../src/driver.h" />
+		<Unit filename="../src/drivers/common/args.cpp" />
+		<Unit filename="../src/drivers/common/args.h" />
+		<Unit filename="../src/drivers/common/cheat.cpp" />
+		<Unit filename="../src/drivers/common/cheat.h" />
+		<Unit filename="../src/drivers/common/config.cpp" />
+		<Unit filename="../src/drivers/common/config.h" />
+		<Unit filename="../src/drivers/common/hq2x.cpp" />
+		<Unit filename="../src/drivers/common/hq2x.h" />
+		<Unit filename="../src/drivers/common/hq3x.cpp" />
+		<Unit filename="../src/drivers/common/hq3x.h" />
+		<Unit filename="../src/drivers/common/nes_ntsc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/drivers/common/nes_ntsc.h" />
+		<Unit filename="../src/drivers/common/nes_ntsc_config.h" />
+		<Unit filename="../src/drivers/common/nes_ntsc_impl.h" />
+		<Unit filename="../src/drivers/common/scale2x.cpp" />
+		<Unit filename="../src/drivers/common/scale2x.h" />
+		<Unit filename="../src/drivers/common/scale3x.cpp" />
+		<Unit filename="../src/drivers/common/scale3x.h" />
+		<Unit filename="../src/drivers/common/scalebit.cpp" />
+		<Unit filename="../src/drivers/common/scalebit.h" />
+		<Unit filename="../src/drivers/common/vidblit.cpp" />
+		<Unit filename="../src/drivers/common/vidblit.h" />
+		<Unit filename="../src/drivers/win/OutputDS.cpp" />
+		<Unit filename="../src/drivers/win/Win32InputBox.cpp" />
+		<Unit filename="../src/drivers/win/Win32InputBox.h" />
+		<Unit filename="../src/drivers/win/archive.cpp" />
+		<Unit filename="../src/drivers/win/archive.h" />
+		<Unit filename="../src/drivers/win/args.cpp" />
+		<Unit filename="../src/drivers/win/args.h" />
+		<Unit filename="../src/drivers/win/aviout.cpp" />
+		<Unit filename="../src/drivers/win/cdlogger.cpp" />
+		<Unit filename="../src/drivers/win/cdlogger.h" />
+		<Unit filename="../src/drivers/win/cheat.cpp" />
+		<Unit filename="../src/drivers/win/cheat.h" />
+		<Unit filename="../src/drivers/win/common.cpp" />
+		<Unit filename="../src/drivers/win/common.h" />
+		<Unit filename="../src/drivers/win/config.cpp" />
+		<Unit filename="../src/drivers/win/config.h" />
+		<Unit filename="../src/drivers/win/debugger.cpp" />
+		<Unit filename="../src/drivers/win/debugger.h" />
+		<Unit filename="../src/drivers/win/debuggersp.cpp" />
+		<Unit filename="../src/drivers/win/debuggersp.h" />
+		<Unit filename="../src/drivers/win/directories.cpp" />
+		<Unit filename="../src/drivers/win/directories.h" />
+		<Unit filename="../src/drivers/win/gui.cpp" />
+		<Unit filename="../src/drivers/win/gui.h" />
+		<Unit filename="../src/drivers/win/guiconfig.cpp" />
+		<Unit filename="../src/drivers/win/guiconfig.h" />
+		<Unit filename="../src/drivers/win/help.cpp" />
+		<Unit filename="../src/drivers/win/help.h" />
+		<Unit filename="../src/drivers/win/input.cpp" />
+		<Unit filename="../src/drivers/win/input.h" />
+		<Unit filename="../src/drivers/win/joystick.cpp" />
+		<Unit filename="../src/drivers/win/joystick.h" />
+		<Unit filename="../src/drivers/win/keyboard.cpp" />
+		<Unit filename="../src/drivers/win/keyboard.h" />
+		<Unit filename="../src/drivers/win/keyscan.h" />
+		<Unit filename="../src/drivers/win/log.cpp" />
+		<Unit filename="../src/drivers/win/log.h" />
+		<Unit filename="../src/drivers/win/lua/include/lauxlib.h" />
+		<Unit filename="../src/drivers/win/lua/include/lua.h" />
+		<Unit filename="../src/drivers/win/lua/include/lua.hpp" />
+		<Unit filename="../src/drivers/win/lua/include/luaconf.h" />
+		<Unit filename="../src/drivers/win/lua/include/lualib.h" />
+		<Unit filename="../src/drivers/win/luaconsole.cpp" />
+		<Unit filename="../src/drivers/win/main.cpp" />
+		<Unit filename="../src/drivers/win/main.h" />
+		<Unit filename="../src/drivers/win/mapinput.cpp" />
+		<Unit filename="../src/drivers/win/mapinput.h" />
+		<Unit filename="../src/drivers/win/memview.cpp" />
+		<Unit filename="../src/drivers/win/memview.h" />
+		<Unit filename="../src/drivers/win/memviewsp.cpp" />
+		<Unit filename="../src/drivers/win/memviewsp.h" />
+		<Unit filename="../src/drivers/win/memwatch.cpp" />
+		<Unit filename="../src/drivers/win/memwatch.h" />
+		<Unit filename="../src/drivers/win/monitor.cpp" />
+		<Unit filename="../src/drivers/win/monitor.h" />
+		<Unit filename="../src/drivers/win/movieoptions.cpp" />
+		<Unit filename="../src/drivers/win/netplay.cpp" />
+		<Unit filename="../src/drivers/win/netplay.h" />
+		<Unit filename="../src/drivers/win/ntview.cpp" />
+		<Unit filename="../src/drivers/win/ntview.h" />
+		<Unit filename="../src/drivers/win/oakra.h" />
+		<Unit filename="../src/drivers/win/palette.cpp" />
+		<Unit filename="../src/drivers/win/palette.h" />
+		<Unit filename="../src/drivers/win/ppuview.cpp" />
+		<Unit filename="../src/drivers/win/ppuview.h" />
+		<Unit filename="../src/drivers/win/pref.cpp" />
+		<Unit filename="../src/drivers/win/pref.h" />
+		<Unit filename="../src/drivers/win/ram_search.cpp" />
+		<Unit filename="../src/drivers/win/ram_search.h" />
+		<Unit filename="../src/drivers/win/ramwatch.cpp" />
+		<Unit filename="../src/drivers/win/ramwatch.h" />
+		<Unit filename="../src/drivers/win/replay.cpp" />
+		<Unit filename="../src/drivers/win/replay.h" />
+		<Unit filename="../src/drivers/win/res.rc" />
+		<Unit filename="../src/drivers/win/res/ICON_1.ico" />
+		<Unit filename="../src/drivers/win/res/ICON_2.ico" />
+		<Unit filename="../src/drivers/win/res/branch_spritesheet.bmp" />
+		<Unit filename="../src/drivers/win/res/taseditor-icon.ico" />
+		<Unit filename="../src/drivers/win/res/taseditor-icon32.ico" />
+		<Unit filename="../src/drivers/win/res/te_0.bmp" />
+		<Unit filename="../src/drivers/win/res/te_0_selected.bmp" />
+		<Unit filename="../src/drivers/win/res/te_1.bmp" />
+		<Unit filename="../src/drivers/win/res/te_10.bmp" />
+		<Unit filename="../src/drivers/win/res/te_10_selected.bmp" />
+		<Unit filename="../src/drivers/win/res/te_11.bmp" />
+		<Unit filename="../src/drivers/win/res/te_11_selected.bmp" />
+		<Unit filename="../src/drivers/win/res/te_12.bmp" />
+		<Unit filename="../src/drivers/win/res/te_12_selected.bmp" />
+		<Unit filename="../src/drivers/win/res/te_13.bmp" />
+		<Unit filename="../src/drivers/win/res/te_13_selected.bmp" />
+		<Unit filename="../src/drivers/win/res/te_14.bmp" />
+		<Unit filename="../src/drivers/win/res/te_14_selected.bmp" />
+		<Unit filename="../src/drivers/win/res/te_15.bmp" />
+		<Unit filename="../src/drivers/win/res/te_15_selected.bmp" />
+		<Unit filename="../src/drivers/win/res/te_16.bmp" />
+		<Unit filename="../src/drivers/win/res/te_16_selected.bmp" />
+		<Unit filename="../src/drivers/win/res/te_17.bmp" />
+		<Unit filename="../src/drivers/win/res/te_17_selected.bmp" />
+		<Unit filename="../src/drivers/win/res/te_18.bmp" />
+		<Unit filename="../src/drivers/win/res/te_18_selected.bmp" />
+		<Unit filename="../src/drivers/win/res/te_19.bmp" />
+		<Unit filename="../src/drivers/win/res/te_19_selected.bmp" />
+		<Unit filename="../src/drivers/win/res/te_1_selected.bmp" />
+		<Unit filename="../src/drivers/win/res/te_2.bmp" />
+		<Unit filename="../src/drivers/win/res/te_2_selected.bmp" />
+		<Unit filename="../src/drivers/win/res/te_3.bmp" />
+		<Unit filename="../src/drivers/win/res/te_3_selected.bmp" />
+		<Unit filename="../src/drivers/win/res/te_4.bmp" />
+		<Unit filename="../src/drivers/win/res/te_4_selected.bmp" />
+		<Unit filename="../src/drivers/win/res/te_5.bmp" />
+		<Unit filename="../src/drivers/win/res/te_5_selected.bmp" />
+		<Unit filename="../src/drivers/win/res/te_6.bmp" />
+		<Unit filename="../src/drivers/win/res/te_6_selected.bmp" />
+		<Unit filename="../src/drivers/win/res/te_7.bmp" />
+		<Unit filename="../src/drivers/win/res/te_7_selected.bmp" />
+		<Unit filename="../src/drivers/win/res/te_8.bmp" />
+		<Unit filename="../src/drivers/win/res/te_8_selected.bmp" />
+		<Unit filename="../src/drivers/win/res/te_9.bmp" />
+		<Unit filename="../src/drivers/win/res/te_9_selected.bmp" />
+		<Unit filename="../src/drivers/win/res/te_arrow.bmp" />
+		<Unit filename="../src/drivers/win/res/te_green_arrow.bmp" />
+		<Unit filename="../src/drivers/win/res/te_green_blue_arrow.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_0.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_0_lostpos.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_0_playback.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_1.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_10.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_10_lostpos.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_10_playback.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_11.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_11_lostpos.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_11_playback.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_12.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_12_lostpos.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_12_playback.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_13.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_13_lostpos.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_13_playback.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_14.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_14_lostpos.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_14_playback.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_15.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_15_lostpos.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_15_playback.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_16.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_16_lostpos.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_16_playback.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_17.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_17_lostpos.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_17_playback.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_18.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_18_lostpos.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_18_playback.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_19.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_19_lostpos.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_19_playback.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_1_lostpos.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_1_playback.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_2.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_2_lostpos.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_2_playback.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_3.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_3_lostpos.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_3_playback.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_4.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_4_lostpos.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_4_playback.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_5.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_5_lostpos.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_5_playback.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_6.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_6_lostpos.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_6_playback.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_7.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_7_lostpos.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_7_playback.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_8.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_8_lostpos.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_8_playback.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_9.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_9_lostpos.bmp" />
+		<Unit filename="../src/drivers/win/res/te_piano_9_playback.bmp" />
+		<Unit filename="../src/drivers/win/resource.h" />
+		<Unit filename="../src/drivers/win/sound.cpp" />
+		<Unit filename="../src/drivers/win/sound.h" />
+		<Unit filename="../src/drivers/win/state.cpp" />
+		<Unit filename="../src/drivers/win/state.h" />
+		<Unit filename="../src/drivers/win/taseditor.cpp" />
+		<Unit filename="../src/drivers/win/taseditor.h" />
+		<Unit filename="../src/drivers/win/taseditor/bookmark.cpp" />
+		<Unit filename="../src/drivers/win/taseditor/bookmark.h" />
+		<Unit filename="../src/drivers/win/taseditor/bookmarks.cpp" />
+		<Unit filename="../src/drivers/win/taseditor/bookmarks.h" />
+		<Unit filename="../src/drivers/win/taseditor/branches.cpp" />
+		<Unit filename="../src/drivers/win/taseditor/branches.h" />
+		<Unit filename="../src/drivers/win/taseditor/editor.cpp" />
+		<Unit filename="../src/drivers/win/taseditor/editor.h" />
+		<Unit filename="../src/drivers/win/taseditor/greenzone.cpp" />
+		<Unit filename="../src/drivers/win/taseditor/greenzone.h" />
+		<Unit filename="../src/drivers/win/taseditor/history.cpp" />
+		<Unit filename="../src/drivers/win/taseditor/history.h" />
+		<Unit filename="../src/drivers/win/taseditor/inputlog.cpp" />
+		<Unit filename="../src/drivers/win/taseditor/inputlog.h" />
+		<Unit filename="../src/drivers/win/taseditor/laglog.cpp" />
+		<Unit filename="../src/drivers/win/taseditor/laglog.h" />
+		<Unit filename="../src/drivers/win/taseditor/markers.cpp" />
+		<Unit filename="../src/drivers/win/taseditor/markers.h" />
+		<Unit filename="../src/drivers/win/taseditor/markers_manager.cpp" />
+		<Unit filename="../src/drivers/win/taseditor/markers_manager.h" />
+		<Unit filename="../src/drivers/win/taseditor/piano_roll.cpp" />
+		<Unit filename="../src/drivers/win/taseditor/piano_roll.h" />
+		<Unit filename="../src/drivers/win/taseditor/playback.cpp" />
+		<Unit filename="../src/drivers/win/taseditor/playback.h" />
+		<Unit filename="../src/drivers/win/taseditor/popup_display.cpp" />
+		<Unit filename="../src/drivers/win/taseditor/popup_display.h" />
+		<Unit filename="../src/drivers/win/taseditor/recorder.cpp" />
+		<Unit filename="../src/drivers/win/taseditor/recorder.h" />
+		<Unit filename="../src/drivers/win/taseditor/selection.cpp" />
+		<Unit filename="../src/drivers/win/taseditor/selection.h" />
+		<Unit filename="../src/drivers/win/taseditor/snapshot.cpp" />
+		<Unit filename="../src/drivers/win/taseditor/snapshot.h" />
+		<Unit filename="../src/drivers/win/taseditor/splicer.cpp" />
+		<Unit filename="../src/drivers/win/taseditor/splicer.h" />
+		<Unit filename="../src/drivers/win/taseditor/taseditor_config.cpp" />
+		<Unit filename="../src/drivers/win/taseditor/taseditor_config.h" />
+		<Unit filename="../src/drivers/win/taseditor/taseditor_lua.cpp" />
+		<Unit filename="../src/drivers/win/taseditor/taseditor_lua.h" />
+		<Unit filename="../src/drivers/win/taseditor/taseditor_project.cpp" />
+		<Unit filename="../src/drivers/win/taseditor/taseditor_project.h" />
+		<Unit filename="../src/drivers/win/taseditor/taseditor_window.cpp" />
+		<Unit filename="../src/drivers/win/taseditor/taseditor_window.h" />
+		<Unit filename="../src/drivers/win/texthook.cpp" />
+		<Unit filename="../src/drivers/win/texthook.h" />
+		<Unit filename="../src/drivers/win/throttle.cpp" />
+		<Unit filename="../src/drivers/win/throttle.h" />
+		<Unit filename="../src/drivers/win/timing.cpp" />
+		<Unit filename="../src/drivers/win/timing.h" />
+		<Unit filename="../src/drivers/win/tracer.cpp" />
+		<Unit filename="../src/drivers/win/tracer.h" />
+		<Unit filename="../src/drivers/win/video.cpp" />
+		<Unit filename="../src/drivers/win/video.h" />
+		<Unit filename="../src/drivers/win/wave.cpp" />
+		<Unit filename="../src/drivers/win/wave.h" />
+		<Unit filename="../src/drivers/win/window.cpp" />
+		<Unit filename="../src/drivers/win/window.h" />
+		<Unit filename="../src/drivers/win/zlib/adler32.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/drivers/win/zlib/compress.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/drivers/win/zlib/crc32.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/drivers/win/zlib/deflate.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/drivers/win/zlib/gzio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/drivers/win/zlib/infblock.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/drivers/win/zlib/infcodes.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/drivers/win/zlib/inffast.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/drivers/win/zlib/inflate.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/drivers/win/zlib/inftrees.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/drivers/win/zlib/infutil.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/drivers/win/zlib/trees.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/drivers/win/zlib/uncompr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/drivers/win/zlib/zutil.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/emufile.cpp" />
+		<Unit filename="../src/emufile.h" />
+		<Unit filename="../src/emufile_types.h" />
+		<Unit filename="../src/fceu.cpp" />
+		<Unit filename="../src/fceu.h" />
+		<Unit filename="../src/fceulua.h" />
+		<Unit filename="../src/fcoeffs.h" />
+		<Unit filename="../src/fds.cpp" />
+		<Unit filename="../src/fds.h" />
+		<Unit filename="../src/file.cpp" />
+		<Unit filename="../src/file.h" />
+		<Unit filename="../src/filter.cpp" />
+		<Unit filename="../src/filter.h" />
+		<Unit filename="../src/fir/c44100ntsc.h" />
+		<Unit filename="../src/fir/c44100pal.h" />
+		<Unit filename="../src/fir/c48000ntsc.h" />
+		<Unit filename="../src/fir/c48000pal.h" />
+		<Unit filename="../src/fir/c96000ntsc.h" />
+		<Unit filename="../src/fir/c96000pal.h" />
+		<Unit filename="../src/git.h" />
+		<Unit filename="../src/ines-bad.h" />
+		<Unit filename="../src/ines-correct.h" />
+		<Unit filename="../src/ines.cpp" />
+		<Unit filename="../src/ines.h" />
+		<Unit filename="../src/input.cpp" />
+		<Unit filename="../src/input.h" />
+		<Unit filename="../src/input/arkanoid.cpp" />
+		<Unit filename="../src/input/bworld.cpp" />
+		<Unit filename="../src/input/cursor.cpp" />
+		<Unit filename="../src/input/fkb.cpp" />
+		<Unit filename="../src/input/ftrainer.cpp" />
+		<Unit filename="../src/input/hypershot.cpp" />
+		<Unit filename="../src/input/mahjong.cpp" />
+		<Unit filename="../src/input/mouse.cpp" />
+		<Unit filename="../src/input/oekakids.cpp" />
+		<Unit filename="../src/input/powerpad.cpp" />
+		<Unit filename="../src/input/quiz.cpp" />
+		<Unit filename="../src/input/shadow.cpp" />
+		<Unit filename="../src/input/share.h" />
+		<Unit filename="../src/input/suborkb.cpp" />
+		<Unit filename="../src/input/suborkb.h" />
+		<Unit filename="../src/input/toprider.cpp" />
+		<Unit filename="../src/input/zapper.cpp" />
+		<Unit filename="../src/lua-engine.cpp" />
+		<Unit filename="../src/lua/src/lapi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/lua/src/lapi.h" />
+		<Unit filename="../src/lua/src/lauxlib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/lua/src/lauxlib.h" />
+		<Unit filename="../src/lua/src/lbaselib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/lua/src/lcode.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/lua/src/lcode.h" />
+		<Unit filename="../src/lua/src/ldblib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/lua/src/ldebug.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/lua/src/ldebug.h" />
+		<Unit filename="../src/lua/src/ldo.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/lua/src/ldo.h" />
+		<Unit filename="../src/lua/src/ldump.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/lua/src/lfunc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/lua/src/lfunc.h" />
+		<Unit filename="../src/lua/src/lgc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/lua/src/lgc.h" />
+		<Unit filename="../src/lua/src/linit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/lua/src/liolib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/lua/src/llex.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/lua/src/llex.h" />
+		<Unit filename="../src/lua/src/llimits.h" />
+		<Unit filename="../src/lua/src/lmathlib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/lua/src/lmem.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/lua/src/lmem.h" />
+		<Unit filename="../src/lua/src/loadlib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/lua/src/lobject.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/lua/src/lobject.h" />
+		<Unit filename="../src/lua/src/lopcodes.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/lua/src/lopcodes.h" />
+		<Unit filename="../src/lua/src/loslib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/lua/src/lparser.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/lua/src/lparser.h" />
+		<Unit filename="../src/lua/src/lstate.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/lua/src/lstate.h" />
+		<Unit filename="../src/lua/src/lstring.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/lua/src/lstring.h" />
+		<Unit filename="../src/lua/src/lstrlib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/lua/src/ltable.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/lua/src/ltable.h" />
+		<Unit filename="../src/lua/src/ltablib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/lua/src/ltm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/lua/src/ltm.h" />
+		<Unit filename="../src/lua/src/lua.h" />
+		<Unit filename="../src/lua/src/luaconf.h" />
+		<Unit filename="../src/lua/src/lualib.h" />
+		<Unit filename="../src/lua/src/lundump.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/lua/src/lundump.h" />
+		<Unit filename="../src/lua/src/lvm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/lua/src/lvm.h" />
+		<Unit filename="../src/lua/src/lzio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/lua/src/lzio.h" />
+		<Unit filename="../src/lua/src/print.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/movie.cpp" />
+		<Unit filename="../src/movie.h" />
+		<Unit filename="../src/netplay.cpp" />
+		<Unit filename="../src/netplay.h" />
+		<Unit filename="../src/nsf.cpp" />
+		<Unit filename="../src/nsf.h" />
+		<Unit filename="../src/oldmovie.cpp" />
+		<Unit filename="../src/oldmovie.h" />
+		<Unit filename="../src/ops.inc" />
+		<Unit filename="../src/palette.cpp" />
+		<Unit filename="../src/palette.h" />
+		<Unit filename="../src/palettes/palettes.h" />
+		<Unit filename="../src/palettes/rp2c04001.h" />
+		<Unit filename="../src/palettes/rp2c04002.h" />
+		<Unit filename="../src/palettes/rp2c04003.h" />
+		<Unit filename="../src/palettes/rp2c05004.h" />
+		<Unit filename="../src/ppu.cpp" />
+		<Unit filename="../src/ppu.h" />
+		<Unit filename="../src/pputile.inc" />
+		<Unit filename="../src/sound.cpp" />
+		<Unit filename="../src/sound.h" />
+		<Unit filename="../src/state.cpp" />
+		<Unit filename="../src/state.h" />
+		<Unit filename="../src/types-des.h" />
+		<Unit filename="../src/types.h" />
+		<Unit filename="../src/unif.cpp" />
+		<Unit filename="../src/unif.h" />
+		<Unit filename="../src/utils/ConvertUTF.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/utils/ConvertUTF.h" />
+		<Unit filename="../src/utils/crc32.cpp" />
+		<Unit filename="../src/utils/crc32.h" />
+		<Unit filename="../src/utils/endian.cpp" />
+		<Unit filename="../src/utils/endian.h" />
+		<Unit filename="../src/utils/general.cpp" />
+		<Unit filename="../src/utils/general.h" />
+		<Unit filename="../src/utils/guid.cpp" />
+		<Unit filename="../src/utils/guid.h" />
+		<Unit filename="../src/utils/ioapi.cpp" />
+		<Unit filename="../src/utils/ioapi.h" />
+		<Unit filename="../src/utils/md5.cpp" />
+		<Unit filename="../src/utils/md5.h" />
+		<Unit filename="../src/utils/memory.cpp" />
+		<Unit filename="../src/utils/memory.h" />
+		<Unit filename="../src/utils/unzip.cpp" />
+		<Unit filename="../src/utils/unzip.h" />
+		<Unit filename="../src/utils/valuearray.h" />
+		<Unit filename="../src/utils/xstring.cpp" />
+		<Unit filename="../src/utils/xstring.h" />
+		<Unit filename="../src/version.h" />
+		<Unit filename="../src/video.cpp" />
+		<Unit filename="../src/video.h" />
+		<Unit filename="../src/vsuni.cpp" />
+		<Unit filename="../src/vsuni.h" />
+		<Unit filename="../src/wave.cpp" />
+		<Unit filename="../src/wave.h" />
+		<Unit filename="../src/x6502.cpp" />
+		<Unit filename="../src/x6502.h" />
+		<Unit filename="../src/x6502abbrev.h" />
+		<Unit filename="../src/x6502struct.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

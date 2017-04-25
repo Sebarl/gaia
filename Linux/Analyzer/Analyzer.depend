@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1479073249 source:/home/tecno_1994/Tesis/learnes/Linux/Analyzer/main.cpp
+	<stdio.h>
+	<string>
+	<fstream>
+	<vector>
+	<ext/stdio_filebuf.h>
+	<string.h>
+	<math.h>
+	<stdlib.h>
+	<omp.h>
+	<algorithm>
+
+1478838097 source:/home/sebastian/Documentos/Linux/Analyzer/main.cpp
+	<stdio.h>
+	<string>
+	<fstream>
+	<vector>
+	<ext/stdio_filebuf.h>
+	<string.h>
+	<math.h>
+	<stdlib.h>
+	<omp.h>
+	<algorithm>
+

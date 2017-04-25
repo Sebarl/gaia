@@ -1,0 +1,17 @@
+Fceux truchoide (C) Pirata Systems Inc
+
+Enhorabuena! Has obtenido una copia ilícita de fceux! Este fork posee los siguientes parametros extra:
+
+Fceux full: -e | --ae-settings : especifica la ruta del archivo de configuracion de IA.so, por defecto: ae.txt
+            -l | --frame-limit : numero maximo de frames a emular antes de cerrar el emulador, ideal para hacer una buena broma a tus amigos, por defecto: -1
+            -I | --enable-ia : habilitar o no la IA, para desperdiciar completamente la ultidad de este fork (0 - off, 1 - on) por defecto: 1
+
+Fceux headless: -e | --ae-settings : especifica la ruta del archivo de configuracion de IA.so, por defecto: ae.txt
+                -l | --frame-limit : numero maximo de frames a emular antes de cerrar el emulador, ideal para cortarle la joda a una IA que anda volando, por defecto: -1
+		-a | --analyze : especifica la ruta de archivo a un video .fm2 a analizar 
+
+El formato del archivo de configuracion es bastante laxo, solamente requiere tener los parametros separados por un espacio o por un enter.
+
+Nota: aparentemente fceux guarda los ultimos parametros que le pasaste y los carga entre ejecucciones, por lo que una vez cambiados los parametros, estos actuan como los nuevos parametros por defecto.
+
+Gracias por adquirir un producto de calidad de Pirata Systems, esperamos que lo disfrutes!

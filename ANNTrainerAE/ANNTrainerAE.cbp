@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ANNTrainerAE" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/OwnPinballAE" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="params.txt 333 1380 ../../../ANNTrainerAE/RAMMask.mask prefix ../../../ANNTrainerAE/HeissenbugTanhInferer.weights Contra.nes" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-fopenmp" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-fopenmp -lpthread" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/OwnPinballAE" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../ANNTrainerAE" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="params.txt 333 1440 ../../../ANNTrainerAE/Contra1440.mask Contra1440.prefix ../../../ANNTrainerAE/Contra1440.weights Contra.nes" />
+				<Compiler>
+					<Add option="-march=corei7" />
+					<Add option="-O3" />
+					<Add option="-fopenmp" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-fopenmp -lpthread" />
+				</Linker>
+			</Target>
+			<Target title="Profile">
+				<Option output="bin/Profile/OwnPinballAE" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Profile/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="params.txt 42" />
+				<Compiler>
+					<Add option="-pg" />
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-pg" />
+				</Linker>
+			</Target>
+			<Target title="ReleaseIntel">
+				<Option output="bin/ReleaseIntel/OwnPinballAE" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/ReleaseIntel/" />
+				<Option type="1" />
+				<Option compiler="icc" />
+				<Option parameters="params.txt 418 2048 ../../../ANNTrainerAE/TheMask ../../../ANNTrainerAE/TheWeights Pinball.nes" />
+				<Compiler>
+					<Add option="-openmp" />
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-openmp" />
+					<Add option="-lsvml" />
+					<Add option="-limf" />
+					<Add option="-lirng" />
+					<Add option="-lrt" />
+					<Add option="-lintlc" />
+					<Add option="-lpthread" />
+					<Add option="-lm" />
+				</Linker>
+			</Target>
+			<Target title="ReleaseMic">
+				<Option output="bin/ReleaseMic/OwnPinballAE" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/ReleaseMic/" />
+				<Option type="1" />
+				<Option compiler="icc" />
+				<Option parameters="params.txt 418" />
+				<Compiler>
+					<Add option="-openmp" />
+					<Add option="-O2" />
+					<Add option="-mmic" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-openmp" />
+					<Add option="-mmic" />
+					<Add option="-lsvml" />
+					<Add option="-limf" />
+					<Add option="-lirng" />
+					<Add option="-lrt" />
+					<Add option="-lintlc" />
+					<Add option="-lpthread" />
+					<Add option="-lm" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add directory="include" />
+			<Add directory="../AEFramework/include" />
+		</Compiler>
+		<Unit filename="../AEFramework/include/AbstractCrossover.h" />
+		<Unit filename="../AEFramework/include/ActivationFunction.h" />
+		<Unit filename="../AEFramework/include/CandidateFactory.h" />
+		<Unit filename="../AEFramework/include/CheapSigmoid.h" />
+		<Unit filename="../AEFramework/include/Constants.h" />
+		<Unit filename="../AEFramework/include/EvaluatedCandidate.h" />
+		<Unit filename="../AEFramework/include/EvolutionEngine.h" />
+		<Unit filename="../AEFramework/include/EvolutionObserver.h" />
+		<Unit filename="../AEFramework/include/EvolutionPipeline.h" />
+		<Unit filename="../AEFramework/include/EvolutionUtils.h" />
+		<Unit filename="../AEFramework/include/EvolutionaryOperator.h" />
+		<Unit filename="../AEFramework/include/FinalStatistics.h" />
+		<Unit filename="../AEFramework/include/FitnessEvaluator.h" />
+		<Unit filename="../AEFramework/include/Gaussian.h" />
+		<Unit filename="../AEFramework/include/GenerationCount.h" />
+		<Unit filename="../AEFramework/include/GenerationObserver.h" />
+		<Unit filename="../AEFramework/include/GenericException.h" />
+		<Unit filename="../AEFramework/include/Identity.h" />
+		<Unit filename="../AEFramework/include/InnovationDB.h" />
+		<Unit filename="../AEFramework/include/Innovations.h" />
+		<Unit filename="../AEFramework/include/IslandsEvolutionEngine.h" />
+		<Unit filename="../AEFramework/include/MicParallelEvolutionEngine.h" />
+		<Unit filename="../AEFramework/include/MigrationOperator.h" />
+		<Unit filename="../AEFramework/include/NEATCandidateFactory.h" />
+		<Unit filename="../AEFramework/include/NEATEvolutionEngine.h" />
+		<Unit filename="../AEFramework/include/NEATGenome.h" />
+		<Unit filename="../AEFramework/include/NEATLink.h" />
+		<Unit filename="../AEFramework/include/NEATNeuron.h" />
+		<Unit filename="../AEFramework/include/NEATObserver.h" />
+		<Unit filename="../AEFramework/include/NEATParams.h" />
+		<Unit filename="../AEFramework/include/NEATSelectionStrategy.h" />
+		<Unit filename="../AEFramework/include/NEATSpecies.h" />
+		<Unit filename="../AEFramework/include/NEATStochasticUniversalSampling.h" />
+		<Unit filename="../AEFramework/include/NeuronType.h" />
+		<Unit filename="../AEFramework/include/OwnAEUtils.h" />
+		<Unit filename="../AEFramework/include/ParallelEvolutionEngine.h" />
+		<Unit filename="../AEFramework/include/PlatformSpecific.h" />
+		<Unit filename="../AEFramework/include/PopulationData.h" />
+		<Unit filename="../AEFramework/include/Random.h" />
+		<Unit filename="../AEFramework/include/ReLU.h" />
+		<Unit filename="../AEFramework/include/RingMigration.h" />
+		<Unit filename="../AEFramework/include/SelectionStrategy.h" />
+		<Unit filename="../AEFramework/include/Sigmoid.h" />
+		<Unit filename="../AEFramework/include/SimpleEvolutionEngine.h" />
+		<Unit filename="../AEFramework/include/StochasticUniversalSampling.h" />
+		<Unit filename="../AEFramework/include/TerminationCondition.h" />
+		<Unit filename="../AEFramework/include/XorShift128.h" />
+		<Unit filename="../AEFramework/src/CheapSigmoid.cpp" />
+		<Unit filename="../AEFramework/src/Gaussian.cpp" />
+		<Unit filename="../AEFramework/src/GenericException.cpp" />
+		<Unit filename="../AEFramework/src/Identity.cpp" />
+		<Unit filename="../AEFramework/src/InnovationDB.cpp" />
+		<Unit filename="../AEFramework/src/NEATCandidateFactory.cpp" />
+		<Unit filename="../AEFramework/src/NEATEvolutionEngine.cpp" />
+		<Unit filename="../AEFramework/src/NEATGenome.cpp" />
+		<Unit filename="../AEFramework/src/NEATLink.cpp" />
+		<Unit filename="../AEFramework/src/NEATNeuron.cpp" />
+		<Unit filename="../AEFramework/src/NEATSpecies.cpp" />
+		<Unit filename="../AEFramework/src/NEATStochasticUniversalSampling.cpp" />
+		<Unit filename="../AEFramework/src/OwnAEUtils.cpp" />
+		<Unit filename="../AEFramework/src/PlatformSpecific.cpp" />
+		<Unit filename="../AEFramework/src/ReLU.cpp" />
+		<Unit filename="../AEFramework/src/Sigmoid.cpp" />
+		<Unit filename="../AEFramework/src/Tanh.cpp" />
+		<Unit filename="../AEFramework/src/XorShift128.cpp" />
+		<Unit filename="include/FCEUXEvaluator.h" />
+		<Unit filename="include/Parameters.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/FCEUXEvaluator.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

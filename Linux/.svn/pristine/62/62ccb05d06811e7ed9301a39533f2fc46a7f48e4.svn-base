@@ -1,0 +1,248 @@
+#include "AI.h"
+#include <cmath>
+#include <iostream>
+#include <fstream>
+
+
+//Dumbed down FM2 parser extracted from FCEUX
+
+
+#define MOVIE_VERSION           3
+
+uint8 parseJoy(FILE* is)
+{
+	char buf[8];
+	is->fread(buf,8);
+	uint8 joystate = 0;
+	for(int i=0;i<8;i++)
+	{
+		joystate <<= 1;
+		joystate |= ((buf[i]=='.'||buf[i]==' ')?0:1);
+	}
+	return joystate;
+}
+
+uint8 parse(FILE* is)
+{
+	uint8 res;
+	//by the time we get in here, the initial pipe has already been extracted
+
+	//extract the commands
+	commands = uint32DecFromIstream(is);
+	//*is >> commands;
+	is->fgetc(); //eat the pipe
+
+	//a special case: if fourscore is enabled, parse four gamepads
+	
+	res = parseJoy(is);
+	is->fgetc(); //eat the pipe
+
+	parseJoy(is);
+	is->fgetc(); //eat the pipe
+
+
+	//(no fcexp data is logged right now)
+	is->fgetc(); //eat the pipe
+
+	//should be left at a newline
+	return res;
+}
+
+
+uint8 parseBinary(MovieData* md, EMUFILE* is)
+{
+	(uint8)is->fgetc();
+
+	//check for eof
+	if(is->eof()) return false;
+	uint8 res = (uint8)is->fgetc();
+	is->fgetc();
+	return res;
+}
+
+void LoadFM2_binarychunk(std::vector<uint8> *keyPresses, FILE* fp)
+{
+
+	//find out how much remains in the file
+	int curr = fp->ftell();
+	fp->fseek(0,SEEK_END);
+	int end = fp->ftell();
+	int flen = end-curr;
+	fp->fseek(curr,SEEK_SET);
+
+	//the amount todo is the min of the limiting size we received and the remaining contents of the file
+	int todo = flen;
+
+	int numRecords = flen/recordsize;
+
+	for(int i=0;i<numRecords;i++)
+	{
+		keyPresses->push_back(parseBinary(&movieData,fp));
+	}
+}
+
+//yuck... another custom text parser.
+bool LoadFM2(std::vector<uint8> *keyPresses, FILE* fp)
+{
+	// if there's no "binary" tag in the movie header, consider it as a movie in text format
+	bool binaryFlag = false;
+
+	std::ios::pos_type curr = fp->ftell();
+
+	// first, look for an fcm signature
+	char fcmbuf[3];
+	fp->fread(fcmbuf,3);
+	fp->fseek(curr,SEEK_SET);
+	if(!strncmp(fcmbuf,"FCM",3)) {
+		printf("FCM File format is no longer supported. Please use Tools > Convert FCM");
+		return false;
+	}
+
+	//movie must start with "version 3"
+	char buf[9];
+	curr = fp->ftell();
+	fp->fread(buf,9);
+	fp->fseek(curr,SEEK_SET);
+	if(fp->fail()) return false;
+	if(memcmp(buf,"version 3",9))
+		return false;
+
+	std::string key,value;
+	enum {
+		NEWLINE, KEY, SEPARATOR, VALUE, RECORD, COMMENT, SUBTITLE
+	} state = NEWLINE;
+	bool bail = false;
+	bool iswhitespace, isrecchar, isnewline;
+	int c;
+	int size = fp->ftell();
+	for(;;)
+	{
+		if(size--<=0) goto bail;
+		c = fp->fgetc();
+		if(c == -1)
+			goto bail;
+		iswhitespace = (c==' '||c=='\t');
+		isrecchar = (c=='|');
+		isnewline = (c==10||c==13);
+		if(isrecchar && binaryFlag &&)
+		{
+			LoadFM2_binarychunk(keyPresses, fp);
+			return true;
+		} 
+		switch(state)
+		{
+		case NEWLINE:
+			if(isnewline) goto done;
+			if(iswhitespace) goto done;
+			if(isrecchar)
+				goto dorecord;
+			//must be a key
+			key = "";
+			value = "";
+			goto dokey;
+			break;
+		case RECORD:
+			{
+				dorecord:
+				int preparse = fp->ftell();
+				keyPresses->push_back(parse(fp));
+				int postparse = fp->ftell();
+				size -= (postparse-preparse);
+				state = NEWLINE;
+				break;
+			}
+
+		case KEY:
+			dokey: //dookie
+			state = KEY;
+			if(iswhitespace) goto doseparator;
+			if(isnewline) goto commit;
+			key += c;
+			break;
+		case SEPARATOR:
+			doseparator:
+			state = SEPARATOR;
+			if(isnewline) goto commit;
+			if(!iswhitespace) goto dovalue;
+			break;
+		case VALUE:
+			dovalue:
+			state = VALUE;
+			if(isnewline) goto commit;
+			value += c;
+		}
+		goto done;
+
+		bail:
+		bail = true;
+		if(state == VALUE) goto commit;
+		goto done;
+		commit:
+		if(key == "binary"){
+			binaryFlag = atoi(operator [](key).c_str())!=0;	
+		}
+		state = NEWLINE;
+		done: ;
+		if(bail) break;
+	}
+
+	return true;
+}
+
+
+//End of dumbed down FM2 parser
+
+
+
+
+
+
+//static parameters definition
+
+
+//variables declaration
+
+std::vector<uint8> *keyPresses;
+int frameCount = 0;
+
+void HELP(char* c){
+	FILE* file = fopen("HELP", "a");
+	if(file != NULL){
+		fprintf(file, c);
+		fclose(file);
+	}
+}
+
+//RAM analysis
+
+inline void analyze(uint8* RAM){
+	//define analysis methods here!
+}
+
+uint8 runAI(uint8* RAM, bool& exitNow){
+	analyze(RAM);
+	return keyPresses[frameCount++];
+	if(frameCount>=keyPresses->size()){
+		exitNow = true;
+	}
+}
+
+void printStatistics(){
+	//generate output with analysis results
+}
+
+
+int initializeParams(std::string s){
+	FILE* file = fopen(s.c_str(), "r");
+		if(file != NULL){
+			LoadFM2(keyPresses, file);	
+			fclose(file);
+			return 1;
+		}
+		else{
+			//error, cerrar fceux!
+			return 0;
+		}
+}
+
+

@@ -1,0 +1,1862 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="fceux-server"
+                   displayName="fceux-server"
+                   projectFiles="true"
+                   root="../fceux-server">
+      <itemPath>../fceux-server/md5.cpp</itemPath>
+      <itemPath>../fceux-server/md5.h</itemPath>
+      <itemPath>../fceux-server/server.cpp</itemPath>
+      <itemPath>../fceux-server/throttle.cpp</itemPath>
+      <itemPath>../fceux-server/throttle.h</itemPath>
+      <itemPath>../fceux-server/types.h</itemPath>
+    </logicalFolder>
+    <df root="../src" name="0">
+      <df name="boards">
+        <in>01-222.cpp</in>
+        <in>09-034a.cpp</in>
+        <in>103.cpp</in>
+        <in>106.cpp</in>
+        <in>108.cpp</in>
+        <in>112.cpp</in>
+        <in>116.cpp</in>
+        <in>117.cpp</in>
+        <in>120.cpp</in>
+        <in>121.cpp</in>
+        <in>12in1.cpp</in>
+        <in>15.cpp</in>
+        <in>151.cpp</in>
+        <in>156.cpp</in>
+        <in>164.cpp</in>
+        <in>168.cpp</in>
+        <in>170.cpp</in>
+        <in>175.cpp</in>
+        <in>176.cpp</in>
+        <in>177.cpp</in>
+        <in>178.cpp</in>
+        <in>18.cpp</in>
+        <in>183.cpp</in>
+        <in>185.cpp</in>
+        <in>186.cpp</in>
+        <in>187.cpp</in>
+        <in>189.cpp</in>
+        <in>193.cpp</in>
+        <in>199.cpp</in>
+        <in>206.cpp</in>
+        <in>208.cpp</in>
+        <in>222.cpp</in>
+        <in>225.cpp</in>
+        <in>228.cpp</in>
+        <in>230.cpp</in>
+        <in>232.cpp</in>
+        <in>234.cpp</in>
+        <in>235.cpp</in>
+        <in>244.cpp</in>
+        <in>246.cpp</in>
+        <in>252.cpp</in>
+        <in>253.cpp</in>
+        <in>28.cpp</in>
+        <in>32.cpp</in>
+        <in>33.cpp</in>
+        <in>34.cpp</in>
+        <in>36.cpp</in>
+        <in>3d-block.cpp</in>
+        <in>40.cpp</in>
+        <in>41.cpp</in>
+        <in>411120-c.cpp</in>
+        <in>42.cpp</in>
+        <in>43.cpp</in>
+        <in>46.cpp</in>
+        <in>50.cpp</in>
+        <in>51.cpp</in>
+        <in>57.cpp</in>
+        <in>603-5052.cpp</in>
+        <in>62.cpp</in>
+        <in>65.cpp</in>
+        <in>67.cpp</in>
+        <in>68.cpp</in>
+        <in>69.cpp</in>
+        <in>71.cpp</in>
+        <in>72.cpp</in>
+        <in>77.cpp</in>
+        <in>79.cpp</in>
+        <in>80.cpp</in>
+        <in>8157.cpp</in>
+        <in>82.cpp</in>
+        <in>8237.cpp</in>
+        <in>830118C.cpp</in>
+        <in>88.cpp</in>
+        <in>90.cpp</in>
+        <in>91.cpp</in>
+        <in>96.cpp</in>
+        <in>99.cpp</in>
+        <in>__dummy_mapper.cpp</in>
+        <in>a9746.cpp</in>
+        <in>ac-08.cpp</in>
+        <in>addrlatch.cpp</in>
+        <in>ax5705.cpp</in>
+        <in>bandai.cpp</in>
+        <in>bb.cpp</in>
+        <in>bmc13in1jy110.cpp</in>
+        <in>bmc42in1r.cpp</in>
+        <in>bmc64in1nr.cpp</in>
+        <in>bmc70in1.cpp</in>
+        <in>bonza.cpp</in>
+        <in>bs-5.cpp</in>
+        <in>cityfighter.cpp</in>
+        <in>dance2000.cpp</in>
+        <in>datalatch.cpp</in>
+        <in>dream.cpp</in>
+        <in>edu2000.cpp</in>
+        <in>emu2413.c</in>
+        <in>famicombox.cpp</in>
+        <in>ffe.cpp</in>
+        <in>fk23c.cpp</in>
+        <in>ghostbusters63in1.cpp</in>
+        <in>gs-2004.cpp</in>
+        <in>gs-2013.cpp</in>
+        <in>h2288.cpp</in>
+        <in>karaoke.cpp</in>
+        <in>kof97.cpp</in>
+        <in>ks7012.cpp</in>
+        <in>ks7013.cpp</in>
+        <in>ks7017.cpp</in>
+        <in>ks7030.cpp</in>
+        <in>ks7031.cpp</in>
+        <in>ks7032.cpp</in>
+        <in>ks7037.cpp</in>
+        <in>ks7057.cpp</in>
+        <in>le05.cpp</in>
+        <in>lh32.cpp</in>
+        <in>lh53.cpp</in>
+        <in>malee.cpp</in>
+        <in>mihunche.cpp</in>
+        <in>mmc1.cpp</in>
+        <in>mmc2and4.cpp</in>
+        <in>mmc3.cpp</in>
+        <in>mmc5.cpp</in>
+        <in>n106.cpp</in>
+        <in>n625092.cpp</in>
+        <in>novel.cpp</in>
+        <in>onebus.cpp</in>
+        <in>pec-586.cpp</in>
+        <in>sa-9602b.cpp</in>
+        <in>sachen.cpp</in>
+        <in>sc-127.cpp</in>
+        <in>sheroes.cpp</in>
+        <in>sl1632.cpp</in>
+        <in>subor.cpp</in>
+        <in>super24.cpp</in>
+        <in>supervision.cpp</in>
+        <in>t-227-1.cpp</in>
+        <in>t-262.cpp</in>
+        <in>tengen.cpp</in>
+        <in>tf-1201.cpp</in>
+        <in>transformer.cpp</in>
+        <in>vrc1.cpp</in>
+        <in>vrc2and4.cpp</in>
+        <in>vrc3.cpp</in>
+        <in>vrc5.cpp</in>
+        <in>vrc6.cpp</in>
+        <in>vrc7.cpp</in>
+        <in>vrc7p.cpp</in>
+        <in>yoko.cpp</in>
+      </df>
+      <df name="drivers">
+        <df name="common">
+          <in>args.cpp</in>
+          <in>cheat.cpp</in>
+          <in>config.cpp</in>
+          <in>configSys.cpp</in>
+          <in>hq2x.cpp</in>
+          <in>hq3x.cpp</in>
+          <in>nes_ntsc.c</in>
+          <in>scale2x.cpp</in>
+          <in>scale3x.cpp</in>
+          <in>scalebit.cpp</in>
+          <in>vidblit.cpp</in>
+        </df>
+        <df name="sdl">
+          <in>config.cpp</in>
+          <in>sdl.cpp</in>
+        </df>
+      </df>
+      <df name="input">
+        <in>arkanoid.cpp</in>
+        <in>bworld.cpp</in>
+        <in>cursor.cpp</in>
+        <in>fkb.cpp</in>
+        <in>ftrainer.cpp</in>
+        <in>hypershot.cpp</in>
+        <in>mahjong.cpp</in>
+        <in>mouse.cpp</in>
+        <in>oekakids.cpp</in>
+        <in>powerpad.cpp</in>
+        <in>quiz.cpp</in>
+        <in>shadow.cpp</in>
+        <in>suborkb.cpp</in>
+        <in>toprider.cpp</in>
+        <in>zapper.cpp</in>
+      </df>
+      <df name="utils">
+        <in>ConvertUTF.c</in>
+        <in>Crc32impl.cpp</in>
+        <in>crc32.cpp</in>
+        <in>endian.cpp</in>
+        <in>general.cpp</in>
+        <in>guid.cpp</in>
+        <in>ioapi.cpp</in>
+        <in>md5.cpp</in>
+        <in>memory.cpp</in>
+        <in>xstring.cpp</in>
+      </df>
+      <in>cart.cpp</in>
+      <in>cheat.cpp</in>
+      <in>config.cpp</in>
+      <in>emufile.cpp</in>
+      <in>fceu.cpp</in>
+      <in>fds.cpp</in>
+      <in>file.cpp</in>
+      <in>ines.cpp</in>
+      <in>input.cpp</in>
+      <in>palette.cpp</in>
+      <in>ppu.cpp</in>
+      <in>state.cpp</in>
+      <in>unif.cpp</in>
+      <in>video.cpp</in>
+      <in>vsuni.cpp</in>
+      <in>x6502.cpp</in>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>../SConstruct</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>../src</Elem>
+  </sourceRootList>
+  <projectmakefile>../SConstruct</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>Intel|Intel</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <flagsDictionary>
+        <element flagsID="0" commonFlags="-std=c99"/>
+      </flagsDictionary>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>..</buildCommandWorkingDir>
+          <buildCommand>scons -f SConstruct RELEASE=1 DEBUG=0 PROFILE=0</buildCommand>
+          <cleanCommand>scons -f SConstruct RELEASE=1 DEBUG=0 PROFILE=0 -c</cleanCommand>
+          <executablePath>../bin/fceux</executablePath>
+        </makeTool>
+      </makefileType>
+      <item path="../fceux-server/md5.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../fceux-server/server.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../fceux-server/throttle.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../src/boards/01-222.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/09-034a.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/103.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/106.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/108.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/112.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/116.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/117.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/120.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/121.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/12in1.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/15.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/151.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/156.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/164.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/168.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/170.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/175.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/176.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/177.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/178.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/18.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/183.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/185.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/186.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/187.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/189.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/193.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/199.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/206.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/208.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/222.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/225.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/228.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/230.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/232.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/234.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/235.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/244.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/246.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/252.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/253.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/28.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/32.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/33.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/34.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/36.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/3d-block.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/40.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/41.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/411120-c.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/42.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/43.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/46.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/50.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/51.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/57.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/603-5052.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/62.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/65.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/67.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/68.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/69.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/71.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/72.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/77.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/79.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/80.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/8157.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/82.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/8237.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/830118C.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/88.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/90.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/91.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/96.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/99.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/__dummy_mapper.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/a9746.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/ac-08.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/addrlatch.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/ax5705.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/bandai.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/bb.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/bmc13in1jy110.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/bmc42in1r.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/bmc64in1nr.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/bmc70in1.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/bonza.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/bs-5.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/cityfighter.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/dance2000.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/datalatch.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/dream.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/edu2000.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/emu2413.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../src/boards/famicombox.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/ffe.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/fk23c.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/ghostbusters63in1.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/gs-2004.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/gs-2013.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/h2288.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/karaoke.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/kof97.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/ks7012.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/ks7013.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/ks7017.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/ks7030.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/ks7031.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/ks7032.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/ks7037.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/ks7057.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/le05.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/lh32.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/lh53.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/malee.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/mihunche.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/mmc1.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/mmc2and4.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/mmc3.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/mmc5.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/n106.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/n625092.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/novel.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/onebus.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/pec-586.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/sa-9602b.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/sachen.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/sc-127.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/sheroes.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/sl1632.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/subor.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/super24.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/supervision.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/t-227-1.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/t-262.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/tengen.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/tf-1201.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/transformer.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/vrc1.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/vrc2and4.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/vrc3.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/vrc5.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/vrc6.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/vrc7.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/vrc7p.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/boards/yoko.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/cart.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src</pElem>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/cheat.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src</pElem>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/config.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src</pElem>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/drivers/common/args.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/drivers/common/cheat.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/drivers/common/config.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src</pElem>
+            <pElem>../src/utils</pElem>
+            <pElem>../src/drivers</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/drivers/common/configSys.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/drivers/common/hq2x.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/drivers/common/hq3x.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/drivers/common/nes_ntsc.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../src/drivers/common/scale2x.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/drivers/common/scale3x.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/drivers/common/scalebit.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/drivers/common/vidblit.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src</pElem>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/drivers/sdl/config.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/drivers/common</pElem>
+            <pElem>../src</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/drivers/sdl/sdl.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src</pElem>
+            <pElem>../src/utils</pElem>
+            <pElem>../src/drivers/common</pElem>
+            <pElem>../src/drivers</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/emufile.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src</pElem>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/fceu.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src</pElem>
+            <pElem>../src/utils</pElem>
+            <pElem>../src/drivers/sdl</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/fds.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src</pElem>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/file.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src</pElem>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/ines.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src</pElem>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/input.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src</pElem>
+            <pElem>../src/utils</pElem>
+            <pElem>../src/input</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/input/arkanoid.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/input/bworld.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/input/cursor.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/input/fkb.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/input/ftrainer.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/input/hypershot.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/input/mahjong.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/input/mouse.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/input/oekakids.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/input/powerpad.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/input/quiz.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/input/shadow.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/input/suborkb.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/input/toprider.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/input/zapper.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/palette.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src</pElem>
+            <pElem>../src/utils</pElem>
+            <pElem>../src/palettes</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/ppu.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src</pElem>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/state.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src</pElem>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/unif.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src</pElem>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/utils/ConvertUTF.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../src/utils/Crc32impl.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/utils/crc32.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>../src</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/utils/endian.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>../src</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/utils/general.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>../src</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/utils/guid.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>../src</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/utils/ioapi.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/utils/md5.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>../src</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/utils/memory.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>../src</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/utils/xstring.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>../src</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/video.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src</pElem>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/vsuni.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src</pElem>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../src/x6502.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../src</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <folder path="0/boards">
+        <cTool>
+          <incDir>
+            <pElem>../src/boards</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+        <ccTool>
+          <incDir>
+            <pElem>../src/boards</pElem>
+            <pElem>../src</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/drivers">
+        <cTool>
+          <incDir>
+            <pElem>../src/drivers/common</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/drivers/common">
+        <ccTool>
+          <incDir>
+            <pElem>../src/drivers/common</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/drivers/sdl">
+        <ccTool>
+          <incDir>
+            <pElem>../src/drivers/sdl</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/input">
+        <ccTool>
+          <incDir>
+            <pElem>../src/input</pElem>
+            <pElem>../src</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/utils">
+        <cTool>
+          <incDir>
+            <pElem>../src/utils</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="fceux-server">
+        <ccTool>
+          <incDir>
+            <pElem>../fceux-server</pElem>
+            <pElem>..</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+    </conf>
+  </confs>
+</configurationDescriptor>

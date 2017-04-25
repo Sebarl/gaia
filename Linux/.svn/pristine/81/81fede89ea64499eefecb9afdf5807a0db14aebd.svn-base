@@ -1,0 +1,7 @@
+#!/bin/sh
+gcc -O3 -c -fPIC AI.cpp -o AI.o
+gcc -O3 -shared -o AI.so AI.o
+cp -f AI.so 'Fceux Headless/bin/AI.so'
+gcc -O3 -c -fPIC Analyzer.cpp -o Analyzer.o
+gcc -O3 -shared -o Analyzer.so Analyzer.o
+cp -f Analyzer.so 'Fceux Headless/bin/Analyzer.so'

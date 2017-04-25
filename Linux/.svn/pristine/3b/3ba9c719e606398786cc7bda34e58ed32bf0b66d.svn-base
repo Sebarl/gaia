@@ -1,0 +1,4 @@
+#!/bin/sh
+icpc -O3 -mmic -c -fPIC AI.cpp -o AI.o
+icpc -O3 -mmic -shared -o AI.so AI.o
+cp -f AI.so FceuxMic/bin/AI.so

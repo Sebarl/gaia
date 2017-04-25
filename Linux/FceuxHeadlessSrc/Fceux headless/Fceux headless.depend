@@ -1,0 +1,45 @@
+# depslib dependency file v1.0
+1322717530 source:/home/sebastian/Documents/fceux-2.2 (headless).2/fceux-server/md5.cpp
+	<string.h>
+	"types.h"
+	"md5.h"
+
+1322717530 /home/sebastian/Documents/fceux-2.2 (headless).2/fceux-server/types.h
+	<inttypes.h>
+
+1322717530 /home/sebastian/Documents/fceux-2.2 (headless).2/fceux-server/md5.h
+
+1351863696 source:/home/sebastian/Documents/fceux-2.2 (headless).2/fceux-server/server.cpp
+	<time.h>
+	<stdlib.h>
+	<string.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<sys/ioctl.h>
+	<sys/time.h>
+	<sys/param.h>
+	<netinet/in.h>
+	<netinet/tcp.h>
+	<arpa/inet.h>
+	<stdio.h>
+	<unistd.h>
+	<netdb.h>
+	<errno.h>
+	<fcntl.h>
+	<stdarg.h>
+	<exception>
+	"types.h"
+	"md5.h"
+	"throttle.h"
+
+1322717530 /home/sebastian/Documents/fceux-2.2 (headless).2/fceux-server/throttle.h
+
+1322717530 source:/home/sebastian/Documents/fceux-2.2 (headless).2/fceux-server/throttle.cpp
+	<sys/time.h>
+	<unistd.h>
+	"types.h"
+	"throttle.h"
+
+1319347959 source:/home/sebastian/Documents/fceux-2.2 (headless).2/getSDLKey/getSDLKey.cpp
+	<SDL/SDL.h>
+
