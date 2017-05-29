@@ -3,20 +3,20 @@ Dependencias:
 
 Para poder compilar exitosamente se requieren los siguientes paquetes:
 
-*Las dependencias de Fceux (segun el manual de instalacion):
+* Las dependencias de Fceux (segun el manual de instalacion):
 	
-	-libsdl1.2 - It is strongly recommended that you upgrade to the latest
-		version of sdl (1.2.15 at the time of writing).
-	-scons - Required to build fceux.
-	-libgtk2.0 (optional) - version >= 2.24 recommended
-	-libgtk3.0 (optional) - this compiles as of fceux 2.2.0
-	-liblua5.1 (optional)
-	-minizip (optional) - you may chose to use the version of minizip on your system by enabling SYSTEM_MINIZIP in the SConstruct
-	-c++ compiler -- you may use g++ from gcc or clang++ from llvm.
+		-libsdl1.2 - It is strongly recommended that you upgrade to the latest
+			version of sdl (1.2.15 at the time of writing).
+		-scons - Required to build fceux.
+		-libgtk2.0 (optional) - version >= 2.24 recommended
+		-libgtk3.0 (optional) - this compiles as of fceux 2.2.0
+		-liblua5.1 (optional)
+		-minizip (optional) - you may chose to use the version of minizip on your system by enabling SYSTEM_MINIZIP in the SConstruct
+		-c++ compiler -- you may use g++ from gcc or clang++ from llvm.
 
-*OpenMP
+* OpenMP
 
-*En caso de querer utilizar las funcionalidades para offload al coprocesador Xeon Phi debe instalarse el compilador de Intel y las librerias correspondientes para cross-compile a la arquitectura k1om
+* En caso de querer utilizar las funcionalidades para offload al coprocesador Xeon Phi debe instalarse el compilador de Intel y las librerias correspondientes para cross-compile a la arquitectura k1om
 
 Instrucciones de compilacion:
 
